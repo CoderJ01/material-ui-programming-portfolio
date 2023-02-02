@@ -10,12 +10,19 @@ const AboutMe = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
-                <Avatar
-                    alt="Remy Sharp"
-                    src={image}
-                    sx={{ width: 150, height: 150 }}
-                />
+                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh'}}>
+                <div style={{ display: 'flex', justifyContent:'center'}}>
+                    <Avatar
+                        alt="Remy Sharp"
+                        src={image}
+                        sx={{ width: 150, height: 150 }}
+                    />
+                </div>
+                <Container maxWidth="sm">
+                    <Box sx={{ bgcolor: 'blue', height: '50vh' }}>
+
+                    </Box>
+                </Container>
                 </Box>
             </Container>
         </React.Fragment>
