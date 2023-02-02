@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Layout from "./components/Layout/Layout.component";
-import Navbar from "./components/Header/Header.component";
+import Layout from "./components/Layout/Layout.component";
+// import Navbar from "./components/Header/Header.component";
 import AboutMe from "./pages/AboutMe/AboutMe.page";
 import Portfolio from "./pages/Portfolio/Portfolio.page";
 import Skills from "./pages/Skills/Skills.page";
@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar/>}>
+        <Route path="/" element={<Layout/>}>
           <Route index element={<AboutMe/>}/>
           <Route path="portfolio" element={<Portfolio/>}/>
           <Route path="skills" element={<Skills/>}/>
