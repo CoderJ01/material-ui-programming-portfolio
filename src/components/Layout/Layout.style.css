@@ -11,11 +11,6 @@
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    width: 25%;
-}
-
-.layoutli {
-    font-size: 100%;
 }
 
 /* Desktop */
@@ -27,13 +22,36 @@
     .layoutul {
         margin-left: 600px;
         margin-top: 25px;
+        width: 25%;
+    }
+
+    .layoutli {
+        font-size: 100%;
     }
 }
 
 /* iPad Pro */
 @media screen and (max-width: 1024px) {
     .layoutnav {
-        
+        margin-top: -29px;
+    }
+
+    .layoutnav h1 {
+        font-size: 225%;
+        margin-left: 25%;
+        text-align: center;
+        width: 50%;
+    }
+
+    .layoutul {
+        margin-left: 25%;
+        width: 50%;
+        border: 3px solid red;
+        font-size: 150%;
+    }
+
+    .layoutli {
+        font-size: 150%;
     }
 }
 
