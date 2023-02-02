@@ -5,7 +5,6 @@
 
 .layoutnav {
     background-color: rgb(0, 4, 55);
-    display: flex;
 }
 
 .layoutul {
@@ -21,9 +20,20 @@
 
 /* Desktop */
 @media screen and (min-width: 1280px) {
+    .layoutnav {
+        display: flex;
+    }
+
     .layoutul {
         margin-left: 600px;
         margin-top: 25px;
+    }
+}
+
+/* iPad Pro */
+@media screen and (max-width: 1024px) {
+    .layoutnav {
+        
     }
 }
 
