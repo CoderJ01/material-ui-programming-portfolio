@@ -8,7 +8,7 @@ const Layout = () => {
             <nav className="layoutnav">
                 <h1>Joshua's Programming Portfolio</h1>
                 <ul className="layoutul">
-                    <li className="layoutli">
+                    <li>
                         <Link to="/">About Me</Link>
                     </li>
                     <li>
