@@ -69,3 +69,16 @@
     }
 }
 
+/* Surface Duo */
+@media screen and (max-width: 540px) {
+    .layoutnav h1 {
+        margin-left: 8%;
+        width: 84%;
+    }
+
+    .layoutul {
+        margin-left: -5%;
+        width: 95%;
+    }
+}
+
