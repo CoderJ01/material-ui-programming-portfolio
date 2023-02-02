@@ -24,34 +24,31 @@
         margin-top: 25px;
         width: 25%;
     }
-
-    .layoutli {
-        font-size: 100%;
-    }
 }
 
 /* iPad Pro */
 @media screen and (max-width: 1024px) {
     .layoutnav {
-        margin-top: -29px;
+        margin-top: -31px;
+        width: 100%;
     }
 
     .layoutnav h1 {
-        font-size: 225%;
+        font-size: 250%;
         margin-left: 25%;
         text-align: center;
         width: 50%;
     }
 
     .layoutul {
-        margin-left: 25%;
-        width: 50%;
-        border: 3px solid red;
-        font-size: 150%;
+        font-size: 170%;
+        margin-left: 16%;
+        text-align: center;
+        width: 60%;
     }
 
-    .layoutli {
-        font-size: 150%;
+    .layoutul li {
+        font-size: 100%;
     }
 }
 
