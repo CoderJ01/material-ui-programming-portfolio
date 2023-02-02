@@ -4,13 +4,15 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import image from './images/01_avatar.png'
+import { Typography } from '@mui/material';
 
 const AboutMe = () => {
     return (
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh'}}>
+                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center'}}>
+                <Typography variant="h3" gutterBottom sx={{ color: 'black' }}>About Me</Typography>
                 <div style={{ display: 'flex', justifyContent:'center'}}>
                     <Avatar
                         alt="Remy Sharp"
@@ -20,7 +22,9 @@ const AboutMe = () => {
                 </div>
                 <Container maxWidth="sm">
                     <Box sx={{ bgcolor: 'blue', height: '50vh' }}>
+                        <Typography>
 
+                        </Typography>
                     </Box>
                 </Container>
                 </Box>
