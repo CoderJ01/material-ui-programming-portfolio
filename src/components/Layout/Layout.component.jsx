@@ -1,12 +1,13 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom'; 
+import styles from './Layout.style.css';
 
 const Layout = () => {
     return (
         <div>
-            <nav>
-                <ul>
-                    <li>
+            <nav className="layoutnav">
+                <ul className="layoutul">
+                    <li className="layoutli">
                         <Link to="/">About Me</Link>
                     </li>
                     <li>
