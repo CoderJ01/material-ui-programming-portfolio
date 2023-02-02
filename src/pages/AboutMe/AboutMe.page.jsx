@@ -13,7 +13,7 @@ const AboutMe = () => {
             <CssBaseline />
             <Container maxWidth="md">
                 <Box sx={{ height: '100vh', textAlign: 'center'}}>
-                <Typography variant="h3" gutterBottom sx={{ color: 'black' }}>About Me</Typography>
+                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>About Me</Typography>
                 <div style={{ display: 'flex', justifyContent:'center'}}>
                     <Avatar
                         alt="Remy Sharp"
