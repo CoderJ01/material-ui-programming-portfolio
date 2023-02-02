@@ -20,7 +20,7 @@ const AboutMe = () => {
                         sx={{ width: 150, height: 150 }}
                     />
                 </div>
-                <Container maxWidth="sm">
+                <Container maxWidth="sm" sx={{marginTop: '5%'}}>
                     <Box sx={{ bgcolor: 'blue', height: '50vh' }}>
                         <Typography>
 
