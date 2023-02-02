@@ -13,7 +13,7 @@ const AboutMe = () => {
                 <Avatar
                     alt="Remy Sharp"
                     src="/static/images/avatar/1.jpg"
-                    sx={{ width: 56, height: 56 }}
+                    sx={{ width: 150, height: 150 }}
                 />
                 </Box>
             </Container>
