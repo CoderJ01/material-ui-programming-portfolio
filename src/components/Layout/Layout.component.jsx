@@ -6,6 +6,7 @@ const Layout = () => {
     return (
         <div>
             <nav className="layoutnav">
+                <h1>Joshua's Programming Portfolio</h1>
                 <ul className="layoutul">
                     <li className="layoutli">
                         <Link to="/">About Me</Link>
