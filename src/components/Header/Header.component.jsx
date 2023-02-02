@@ -9,7 +9,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-// import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
@@ -22,7 +21,6 @@ const pages = [
     <Link to="/skills">Skills</Link>,
     <Link to="/contact-me">Contact Me</Link>
 ];
-// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,9 +29,6 @@ function ResponsiveAppBar() {
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-//   const handleOpenUserMenu = (event) => {
-//     setAnchorElUser(event.currentTarget);
-//   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -47,7 +42,6 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
@@ -134,11 +128,7 @@ function ResponsiveAppBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings"> */}
-              {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}> */}
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              {/* </IconButton> */}
-            {/* </Tooltip> */}
+            <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"
@@ -155,11 +145,6 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {/* {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))} */}
             </Menu>
           </Box>
         </Toolbar>
