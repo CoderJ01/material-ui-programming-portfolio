@@ -52,6 +52,7 @@
     }
 }
 
+/* iPad */
 @media screen and (max-width: 768px) {
     .layoutnav {
         margin-top: -32px;
