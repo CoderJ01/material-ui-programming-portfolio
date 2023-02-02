@@ -22,7 +22,7 @@ const AboutMe = () => {
                     />
                 </div>
                 <Container maxWidth="sm" sx={{marginTop: '5%'}}>
-                    <Box sx={{ height: '50vh' }}>
+                    <Box sx={{ height: '100vh' }}>
                         {
                             paragraphs.map(paragraph => {
                                 return (
