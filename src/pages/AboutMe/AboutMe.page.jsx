@@ -7,7 +7,7 @@ const AboutMe = () => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
             <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} />
             </Container>
         </React.Fragment>
