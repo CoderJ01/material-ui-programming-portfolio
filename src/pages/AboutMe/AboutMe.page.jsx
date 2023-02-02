@@ -12,7 +12,7 @@ const AboutMe = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center'}}>
+                <Box sx={{ height: '100vh', textAlign: 'center'}}>
                 <Typography variant="h3" gutterBottom sx={{ color: 'black' }}>About Me</Typography>
                 <div style={{ display: 'flex', justifyContent:'center'}}>
                     <Avatar
@@ -22,7 +22,7 @@ const AboutMe = () => {
                     />
                 </div>
                 <Container maxWidth="sm" sx={{marginTop: '5%'}}>
-                    <Box sx={{ bgcolor: 'blue', height: '50vh' }}>
+                    <Box sx={{ height: '50vh' }}>
                         {
                             paragraphs.map(paragraph => {
                                 return (
