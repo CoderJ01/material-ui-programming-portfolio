@@ -181,8 +181,8 @@ export const selfTaught =
             image: python
         },
         {
-            heading1: "Movies Review Backend (MEAN)",
-            heading2: "Node.js, Express.js, MongoDB",
+            heading1: "Movies Review Backend",
+            heading2: "Node, Express, MongoDB",
             link: "https://github.com/CoderJ01/movies-review/tree/main/backend",
             image: mean
         },
@@ -199,8 +199,8 @@ export const selfTaught =
             image: javaCompGames
         },
         {
-            heading1: "Movies Review Backend (MERN)",
-            heading2: "Node.js, Express.js, MongoD",
+            heading1: "Movies Review Backend",
+            heading2: "Node, Express, MongoDB",
             link: "https://github.com/CoderJ01/movies-review-2/tree/main/backend",
             image: nodeExpressMDB
         },
@@ -212,7 +212,7 @@ export const selfTaught =
         },
         {
             heading1: "Man-Made Objects",
-            heading2: "Java: Abstract Classes and Interfaces",
+            heading2: "Java: Abstraction",
             link: "https://github.com/CoderJ01/man-made-objects-objects",
             image: objectsJava
         },
