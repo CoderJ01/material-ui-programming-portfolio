@@ -9,8 +9,8 @@ const Portfolio = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
-                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
+                <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
+                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                 </Box>
             </Container>
         </React.Fragment>
