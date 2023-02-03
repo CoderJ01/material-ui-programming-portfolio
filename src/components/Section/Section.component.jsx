@@ -8,7 +8,6 @@ import Content from '../../components/Content/Content.component';
 const Section = ({ dataObj, title }) => {
     return (
         <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
-            <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: 'blue', height: '100vh', textAlign: 'center' }}>
                     <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
