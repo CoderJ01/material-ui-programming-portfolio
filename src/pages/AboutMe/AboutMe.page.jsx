@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import image from './images/01_avatar.png'
 import { Typography } from '@mui/material';
-import { paragraphs } from './AboutMe.util';
+import { paragraphs } from './AboutMe.data';
 
 const AboutMe = () => {
     return (
