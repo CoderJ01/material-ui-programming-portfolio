@@ -23,7 +23,7 @@ const Portfolio = () => {
                     <Section dataObj={bootcamp} fromTop={-120} sectionHeight={580}/>
                     <Section dataObj={selfTaught} fromTop={3200} sectionHeight={325}/>
                     <Section dataObj={certificates} fromTop={1525} sectionHeight={137}/>
-                    <Section dataObj={resumeObj} fromTop={290} sectionHeight={65}/>
+                    <Section dataObj={resumeObj} fromTop={290} sectionHeight={63} topBoxHeight={63}/>
                 </Box>
             </Container>
         </React.Fragment>
