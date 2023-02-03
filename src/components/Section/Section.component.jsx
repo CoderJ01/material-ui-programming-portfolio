@@ -11,7 +11,7 @@ const Section = ({ dataObj, title }) => {
             <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: 'blue', height: '100vh', textAlign: 'center' }}>
-                    <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
+                    <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
                         {/* <Content 
