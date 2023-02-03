@@ -23,7 +23,7 @@ const Portfolio = () => {
                                             <Grid container spacing={4} sx={{ justifyContent: 'center', marginTop: '0%'}}>
                                                 <Grid item xs={5}>
                                                 <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>heading 1</Typography>
-                                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%' }}>heading 2</Typography>
+                                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }}>heading 2</Typography>
                                                     <Box
                                                         sx={{
                                                             width: '100%',
