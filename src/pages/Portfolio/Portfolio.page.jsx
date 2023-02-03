@@ -19,7 +19,7 @@ const Portfolio = () => {
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
-                    <Section />
+                    <Section dataObj={beforeBootcamp}/>
                 </Box>
             </Container>
         </React.Fragment>
