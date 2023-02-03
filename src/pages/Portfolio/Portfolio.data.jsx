@@ -53,7 +53,6 @@ export const beforeBootcamp =
     ]
 }
 
-
 export const bootcamp = 
 {
     title: "Bootcamp",
@@ -169,7 +168,6 @@ export const bootcamp =
     ]
 }
 
-
 export const selfTaught = 
 {
     title: "Self-taught",
@@ -236,7 +234,6 @@ export const selfTaught =
         },
     ]
 }
-
 
 export const certificates = 
 {
