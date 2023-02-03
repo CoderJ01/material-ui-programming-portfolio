@@ -3,7 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
-import { sections } from './Portfolio.data';
+import { 
+    beforeBootcamp, 
+    bootcamp, 
+    selfTaught, 
+    certificates, 
+    resumeObj 
+} from './Portfolio.data';
 import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
