@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
-const Section = ({ section, title }) => {
+const Section = ({ dataObj, title }) => {
     return (
         <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
             <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
@@ -14,12 +14,12 @@ const Section = ({ section, title }) => {
                     <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                        <Content 
+                        {/* <Content 
                             heading1={section.content[0].heading1}
                             heading2={section.content[0].heading2}
                             link={section.content[0].link}
                             image={section.content[0].image}
-                        />  
+                        />   */}
                         </Grid>
                     </Box>
                 </Box>
