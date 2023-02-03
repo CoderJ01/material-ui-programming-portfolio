@@ -16,7 +16,8 @@ const Content = ({ heading1, heading2, link, image }) => {
                     backgroundColor: 'primary.main',
                     opacity: [0.9, 0.8, 0.7],
                     },
-                    border: '5px solid rgb(0, 4, 55)'
+                    border: '5px solid rgb(0, 4, 55)',
+                    borderRadius: '2%'
                 }}
             >
                 <a href={link} target="_blank" rel="noreferrer">
