@@ -13,12 +13,7 @@ const Section = ({ dataObj }) => {
                     <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                        {/* <Content 
-                            heading1={section.content[0].heading1}
-                            heading2={section.content[0].heading2}
-                            link={section.content[0].link}
-                            image={section.content[0].image}
-                        />   */}
+                        <Content/>
                         </Grid>
                     </Box>
                 </Box>
