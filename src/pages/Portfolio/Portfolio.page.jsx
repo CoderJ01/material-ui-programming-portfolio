@@ -8,6 +8,7 @@ import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
 const Portfolio = () => {
+    console.log(sections[0].content.heading1)
     return (
         <React.Fragment>
             <CssBaseline />
@@ -22,7 +23,12 @@ const Portfolio = () => {
                                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                                                
+                                               <Content 
+                                                    heading1={section.content.heading1}
+                                                    heading2={section.content.heading2}
+                                                    link={section.content.link}
+                                                    image={section.content.image}
+                                               />             
                                             </Grid>
                                         </Box>
                                     </Box>
