@@ -18,7 +18,7 @@ const AboutMe = () => {
                     <Avatar
                         alt="Remy Sharp"
                         src={image}
-                        sx={{ width: 150, height: 150 }}
+                        sx={{ width: 150, height: 150, border: '5px solid rgb(0, 4, 55)' }}
                     />
                 </div>
                 <Container maxWidth="sm" sx={{marginTop: '5%'}}>
