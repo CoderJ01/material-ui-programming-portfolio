@@ -32,10 +32,17 @@ const Portfolio = () => {
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center', marginTop: '1%'}}>
                                                 <Grid item xs={5}>
-                                                    <Item>xs=6</Item>
-                                                </Grid>
-                                                <Grid item xs={5}>
-                                                    <Item>xs=6</Item>
+                                                    <Box
+                                                        sx={{
+                                                            width: 300,
+                                                            height: 300,
+                                                            backgroundColor: 'primary.dark',
+                                                            '&:hover': {
+                                                            backgroundColor: 'primary.main',
+                                                            opacity: [0.9, 0.8, 0.7],
+                                                            },
+                                                        }}
+                                                    />
                                                 </Grid>
                                             </Grid>
                                         </Box>
