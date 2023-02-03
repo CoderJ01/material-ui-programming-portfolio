@@ -32,6 +32,7 @@ const Portfolio = () => {
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center', marginTop: '1%'}}>
                                                 <Grid item xs={5}>
+                                                <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)', padding: '-10%' }}>h heading</Typography>
                                                     <Box
                                                         sx={{
                                                             width: '100%',
