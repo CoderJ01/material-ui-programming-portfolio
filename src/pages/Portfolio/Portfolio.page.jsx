@@ -22,18 +22,7 @@ const Portfolio = () => {
                                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                                                {
-                                                    section.content.map(content => {
-                                                        return (
-                                                            <Content 
-                                                                heading1={content.heading1} 
-                                                                heading2={content.heading2} 
-                                                                link={content.link} 
-                                                                image={content.image}
-                                                            />
-                                                        );
-                                                    })
-                                                }
+                                                
                                             </Grid>
                                         </Box>
                                     </Box>
