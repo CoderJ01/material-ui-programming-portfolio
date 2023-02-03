@@ -44,12 +44,14 @@ const Portfolio = () => {
                                                             border: '5px solid rgb(0, 4, 55)'
                                                         }}
                                                     >
-                                                        <img 
-                                                            src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=242&h=242&fit=crop&auto=format" 
-                                                            alt=""
-                                                            height="100%"
-                                                            width="100%" 
-                                                        />
+                                                        <a href="https://github.com/CoderJ01/Project1" target="_blank" rel="noreferrer">
+                                                            <img 
+                                                                src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=242&h=242&fit=crop&auto=format" 
+                                                                alt=""
+                                                                height="100%"
+                                                                width="100%" 
+                                                            />
+                                                        </a>
                                                     </Box>
                                                 </Grid>
                                             </Grid>
