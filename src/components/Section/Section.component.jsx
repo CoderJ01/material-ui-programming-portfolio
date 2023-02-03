@@ -7,7 +7,7 @@ import Content from '../../components/Content/Content.component';
 
 const Section = ({ dataObj = [], fromTop, sectionHeight, topBoxHeight = 100 }) => {
     return (
-        <Box sx={{ bgcolor: '#cfe8fc', height: topBoxHeight + 'vh', textAlign: 'center', marginTop: fromTop + 'px' }}>
+        <Box sx={{ height: topBoxHeight + 'vh', textAlign: 'center', marginTop: fromTop + 'px' }}>
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: 'blue', minHeight: sectionHeight + 'vh', textAlign: 'center' }}>
                     <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{dataObj.title}</Typography>
