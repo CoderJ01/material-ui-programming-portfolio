@@ -3,7 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
-import { sections } from './Portfolio.util';
+import { sections } from './Portfolio.data';
 import Grid from '@mui/material/Grid';
 
 const Portfolio = () => {
