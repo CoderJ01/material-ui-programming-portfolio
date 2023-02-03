@@ -22,7 +22,7 @@ const Portfolio = () => {
                                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                                                <Content/>
+                                                <Content heading1={""} heading2={""} link={""} image={""}/>
                                             </Grid>
                                         </Box>
                                     </Box>
