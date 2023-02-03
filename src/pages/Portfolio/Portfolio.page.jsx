@@ -7,8 +7,8 @@ import {
     beforeBootcamp, 
     bootcamp, 
     selfTaught, 
-    certificates, 
-    resumeObj 
+    // certificates, 
+    // resumeObj 
 } from './Portfolio.data';
 import Section from '../../components/Section/Section.component';
 
