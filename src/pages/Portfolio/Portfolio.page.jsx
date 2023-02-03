@@ -21,9 +21,9 @@ const Portfolio = () => {
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     <Section dataObj={beforeBootcamp}/>
                     <Section dataObj={bootcamp}/>
-                    <Section dataObj={selfTaught}/>
+                    {/* <Section dataObj={selfTaught}/>
                     <Section dataObj={certificates}/>
-                    <Section dataObj={resumeObj}/>
+                    <Section dataObj={resumeObj}/> */}
                 </Box>
             </Container>
         </React.Fragment>

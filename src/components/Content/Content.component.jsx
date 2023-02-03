@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 const Content = ({ heading1, heading2, link, image }) => {
     return (
         <Grid item xs={5}>
-        <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{heading1}</Typography>;
+        <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{heading1}</Typography>
         <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }}>{heading2}</Typography>
             <Box
                 sx={{
