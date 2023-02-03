@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
-const Content = () => {
+const Content = ({ heading1, heading2, link, image }) => {
     return (
         <Grid item xs={5}>
         <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>heading 1</Typography>
