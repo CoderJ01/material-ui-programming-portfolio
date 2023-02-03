@@ -13,7 +13,18 @@ const Section = ({ dataObj = [] }) => {
                     <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{dataObj.title}</Typography>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                        <Content/>
+                        {
+                            Array.apply(0, Array(dataObj.content.length)).map(function(x, i) {
+                                return (
+                                    <Content
+                                        heading1={dataObj.content[i].heading1}
+                                        heading2={dataObj.content[i].heading2}
+                                        link={dataObj.content[i].link}
+                                        image={dataObj.content[i].image}
+                                    />
+                                );
+                            })
+                        }
                         </Grid>
                     </Box>
                 </Box>
