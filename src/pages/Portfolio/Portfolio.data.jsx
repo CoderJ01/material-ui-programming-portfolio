@@ -44,12 +44,14 @@ import resume from './images/05_Résumé/01_resume.JPG'
 export const sections = [
     {
         title: "Before Bootcamp",
-        content: {
-            heading1: "Pig",
-            heading2: "C++ Foundations",
-            link: "https://github.com/CoderJ01/pig",
-            image: c
-        }
+        content: [
+            {
+                heading1: "Pig",
+                heading2: "C++ Foundations",
+                link: "https://github.com/CoderJ01/pig",
+                image: c
+            }
+        ]
     },
     {
         title: "Bootcamp",
