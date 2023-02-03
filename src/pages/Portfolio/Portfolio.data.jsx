@@ -65,7 +65,7 @@ export const bootcamp =
         },
         {
             heading1: "First Programming Portfolio",
-            heading2: "Advanced HTML/CSS",
+            heading2: "Advance HTML/CSS",
             link: "https://github.com/CoderJ01/coding-portfolio-website",
             image: portfolio
         },
