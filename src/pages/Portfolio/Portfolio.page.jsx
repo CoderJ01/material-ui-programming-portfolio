@@ -20,7 +20,7 @@ const Portfolio = () => {
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     <Section dataObj={beforeBootcamp}/>
-                    <Section dataObj={bootcamp}/>
+                    {/* <Section dataObj={bootcamp}/> */}
                     {/* <Section dataObj={selfTaught}/>
                     <Section dataObj={certificates}/>
                     <Section dataObj={resumeObj}/> */}
