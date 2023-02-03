@@ -8,7 +8,8 @@ import ContactMe from "./pages/ContactMe/ContactMe.page";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<AboutMe/>}/>
@@ -19,6 +20,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
