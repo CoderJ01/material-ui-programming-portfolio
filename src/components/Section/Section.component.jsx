@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
-const Section = ({ dataObj, title }) => {
+const Section = ({ dataObj }) => {
     return (
         <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
             <Container maxWidth="md">
