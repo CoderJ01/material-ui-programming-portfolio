@@ -24,12 +24,18 @@ const Portfolio = () => {
                                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                                               <Content 
-                                                    heading1={section.content.heading1}
-                                                    heading2={section.content.heading2}
-                                                    link={section.content.link}
-                                                    image={section.content.image}
-                                               />       
+                                                <Content 
+                                                    heading1={section.content[0].heading1}
+                                                    heading2={section.content[0].heading2}
+                                                    link={section.content[0].link}
+                                                    image={section.content[0].image}
+                                                />   
+                                                {/* <Content 
+                                                    heading1={section.content[1].heading1}
+                                                    heading2={section.content[1].heading2}
+                                                    link={section.content[1].link}
+                                                    image={section.content[1].image}
+                                                />     */}
                                             </Grid>
                                         </Box>
                                     </Box>
