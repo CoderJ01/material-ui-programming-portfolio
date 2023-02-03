@@ -34,15 +34,22 @@ const Portfolio = () => {
                                                 <Grid item xs={5}>
                                                     <Box
                                                         sx={{
-                                                            width: 300,
-                                                            height: 300,
-                                                            backgroundColor: 'primary.dark',
+                                                            width: '100%',
+                                                            height: 310,
                                                             '&:hover': {
                                                             backgroundColor: 'primary.main',
                                                             opacity: [0.9, 0.8, 0.7],
                                                             },
+                                                            border: '5px solid rgb(0, 4, 55)'
                                                         }}
-                                                    />
+                                                    >
+                                                        <img 
+                                                            src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=242&h=242&fit=crop&auto=format" 
+                                                            alt=""
+                                                            height="100%"
+                                                            width="100%" 
+                                                        />
+                                                    </Box>
                                                 </Grid>
                                             </Grid>
                                         </Box>
