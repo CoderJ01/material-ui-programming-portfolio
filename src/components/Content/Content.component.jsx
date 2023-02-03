@@ -4,27 +4,10 @@ import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 
 const Content = ({ heading1, heading2, link, image }) => {
-    let topHeader;
-    let bottomHeader;
-
-    if(heading1 != null) {
-        topHeader =  <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{heading1}</Typography>;
-    }
-    else {
-        topHeader = "";
-    }
-
-    if(heading2 != null) {
-        bottomHeader = <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }}>{heading2}</Typography>
-    }
-    else {
-        bottomHeader = "";
-    }
-    
     return (
         <Grid item xs={5}>
-        {topHeader}
-        {bottomHeader}
+        <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{heading1}</Typography>;
+        <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }}>{heading2}</Typography>
             <Box
                 sx={{
                     width: '100%',
