@@ -21,7 +21,7 @@ const Portfolio = () => {
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     <Section dataObj={beforeBootcamp} fromTop={40} sectionHeight={75}/>
                     <Section dataObj={bootcamp} fromTop={-120} sectionHeight={580}/>
-                    <Section dataObj={selfTaught} fromTop={3200}/>
+                    <Section dataObj={selfTaught} fromTop={3200} sectionHeight={325}/>
                     {/* <Section dataObj={certificates}/> */}
                     {/* <Section dataObj={resumeObj}/> */}
                 </Box>
