@@ -8,7 +8,6 @@ import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
 const Portfolio = () => {
-    // console.log(sections[0].content[2].heading1)
     return (
         <React.Fragment>
             <CssBaseline />
@@ -17,25 +16,18 @@ const Portfolio = () => {
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     {
                         sections.map(section => {
-                            console.log(section);
                             return (
                                 <Container maxWidth="md">
                                     <Box sx={{ bgcolor: 'blue', height: '100vh', textAlign: 'center' }}>
                                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{section.title}</Typography>
                                         <Box sx={{ flexGrow: 1 }}>
                                             <Grid container spacing={4} sx={{ justifyContent: 'center'}}>
-                                                <Content 
-                                                    heading1={section.content[0].heading1}
-                                                    heading2={section.content[0].heading2}
-                                                    link={section.content[0].link}
-                                                    image={section.content[0].image}
-                                                />   
-                                                {/* <Content 
-                                                    heading1={section.content[1].heading1}
-                                                    heading2={section.content[1].heading2}
-                                                    link={section.content[1].link}
-                                                    image={section.content[1].image}
-                                                />     */}
+                                            <Content 
+                                                heading1={section.content[0].heading1}
+                                                heading2={section.content[0].heading2}
+                                                link={section.content[0].link}
+                                                image={section.content[0].image}
+                                            />  
                                             </Grid>
                                         </Box>
                                     </Box>
