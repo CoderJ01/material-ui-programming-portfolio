@@ -101,7 +101,7 @@ export const bootcamp =
             image: project1
         },
         {
-            heading1: "Professional README Generator",
+            heading1: "README Generator",
             heading2: "Introduction to Node.js",
             link: "https://github.com/CoderJ01/professional-README-generator",
             image: nodejs
@@ -126,13 +126,13 @@ export const bootcamp =
         },
         {
             heading1: "E-commerce Back-end",
-            heading2: "Object-Relational Mapping (ORM)",
+            heading2: "Object-Relational Mapping",
             link: "",
             image: objectRelate
         },
         {
             heading1: "Tech Blog",
-            heading2: "Model-View-Controller (MVC)",
+            heading2: "Model-View-Controller",
             link: "https://github.com/CoderJ01/tech-blog-2",
             image: mvc
         },
@@ -144,7 +144,7 @@ export const bootcamp =
         },
         {
             heading1: "Regex Tutorial",
-            heading2: "Computer Science for JavaScript",
+            heading2: "Computer Science",
             link: "https://gist.github.com/CoderJ01/52a5e08cbab038ed8aa5e8fc635f16e1",
             image: computer
         },
