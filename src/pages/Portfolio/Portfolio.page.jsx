@@ -10,8 +10,6 @@ import {
     certificates, 
     resumeObj 
 } from './Portfolio.data';
-import Grid from '@mui/material/Grid';
-import Content from '../../components/Content/Content.component';
 
 const Portfolio = () => {
     return (
@@ -20,7 +18,7 @@ const Portfolio = () => {
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh', textAlign: 'center' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
-                    
+                    <Content />
                 </Box>
             </Container>
         </React.Fragment>
