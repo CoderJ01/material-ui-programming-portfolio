@@ -40,6 +40,243 @@ import objectOriented from './images/04_Certificates/03_Intro-to-OOP.JPG'
 // resume
 import resume from './images/05_Résumé/01_resume.JPG'
 
+export const beforeBootcamp = [
+    {
+        title: "Before Bootcamp",
+        content: [
+            {
+                heading1: "Pig",
+                heading2: "C++ Foundations",
+                link: "https://github.com/CoderJ01/pig",
+                image: c
+            }
+        ]
+    },
+];
+
+export const bootcamp = [
+    {
+        title: "Bootcamp",
+        content: [
+            {
+                heading1: "Horiseon",
+                heading2: "HTML Debug",
+                link: "https://github.com/CoderJ01/horiseon-SEO-marketing",
+                image: horiseon
+            },
+            {
+                heading1: "First Programming Portfolio",
+                heading2: "Advanced HTML/CSS",
+                link: "https://github.com/CoderJ01/coding-portfolio-website",
+                image: portfolio
+            },
+            {
+                heading1: "Password Generator",
+                heading2: "JavaScript",
+                link: "https://github.com/CoderJ01/generate-password",
+                image: javascript
+            },
+            {
+                heading1: "Code Quiz",
+                heading2: "Web APIs",
+                link: "https://github.com/CoderJ01/javascript-code-quiz",
+                image: webAPIs
+            },
+            {
+                heading1: "Work Day Planner",
+                heading2: "Third Party APIs",
+                link: "https://github.com/CoderJ01/daily-planner",
+                image: thirdParty
+            },
+            {
+                heading1: "Weather Dashboard",
+                heading2: "Server Side APIs",
+                link: "https://github.com/CoderJ01/weather-dashboard-2",
+                image: serverSide
+            },
+            {
+                heading1: "Money Converter",
+                heading2: "Front-end",
+                link: "https://github.com/CoderJ01/Project1",
+                image: project1
+            },
+            {
+                heading1: "Professional README Generator",
+                heading2: "Introduction to Node.js",
+                link: "https://github.com/CoderJ01/professional-README-generator",
+                image: nodejs
+            },
+            {
+                heading1: "Team Profile Generator",
+                heading2: "Object-Oriented Programming (OOP)",
+                link: "https://github.com/CoderJ01/team-profile-generator",
+                image: object
+            },
+            {
+                heading1: "Note Taker for Bussiness",
+                heading2: "Introduction to Express.js",
+                link: "https://github.com/CoderJ01/note-taker-for-business",
+                image: express
+            },
+            {
+                heading1: "Employee Tracker",
+                heading2: "SQL",
+                link: "https://github.com/CoderJ01/employee-tracker-for-business",
+                image: sql
+            },
+            {
+                heading1: "E-commerce Back-end",
+                heading2: "Object-Relational Mapping (ORM)",
+                link: "",
+                image: objectRelate
+            },
+            {
+                heading1: "Tech Blog",
+                heading2: "Model-View-Controller (MVC)",
+                link: "https://github.com/CoderJ01/tech-blog-2",
+                image: mvc
+            },
+            {
+                heading1: "InstaShoe",
+                heading2: "Full Stack",
+                link: "https://github.com/CoderJ01/InstaShoe",
+                image: project2
+            },
+            {
+                heading1: "Regex Tutorial",
+                heading2: "Computer Science for JavaScript",
+                link: "https://gist.github.com/CoderJ01/52a5e08cbab038ed8aa5e8fc635f16e1",
+                image: computer
+            },
+            {
+                heading1: "Social Network APIs",
+                heading2: "noSQL",
+                link: "https://github.com/CoderJ01/social-network-api/",
+                image: noSQL
+            },
+            {
+                heading1: "React Programming Portfolio",
+                heading2: "React",
+                link: "https://github.com/CoderJ01/react-programming-portfolio",
+                image: reactPortfolio
+            },
+            {
+                heading1: "Nelp",
+                heading2: "MERN/SPA",
+                link: "https://github.com/CoderJ01/review-site",
+                image: mern
+            }
+        ]
+    },
+];
+
+export const selfTaught = [
+    {
+        title: "Self-taught",
+        content: [
+            {
+                heading1: "Computer Games",
+                heading2: "Python Foundations",
+                link: "https://github.com/CoderJ01/python-computer-games",
+                image: python
+            },
+            {
+                heading1: "Movies Review Backend (MEAN)",
+                heading2: "Node.js, Express.js, MongoDB",
+                link: "https://github.com/CoderJ01/movies-review/tree/main/backend",
+                image: mean
+            },
+            {
+                heading1: "Computer Games",
+                heading2: "Java Foundations",
+                link: "https://github.com/CoderJ01/java-computer-games",
+                image: javaCompGames
+            },
+            {
+                heading1: "Computer Games",
+                heading2: "Java: Graphics and Events",
+                link: "https://github.com/CoderJ01/more-java-computer-games",
+                image: javaCompGames
+            },
+            {
+                heading1: "Movies Review Backend (MERN)",
+                heading2: "Node.js, Express.js, MongoD",
+                link: "https://github.com/CoderJ01/movies-review-2/tree/main/backend",
+                image: nodeExpressMDB
+            },
+            {
+                heading1: "McDonald's Order",
+                heading2: "Java: Objects",
+                link: "https://github.com/CoderJ01/order-from-McDonalds",
+                image: basicJava
+            },
+            {
+                heading1: "Man-Made Objects",
+                heading2: "Java: Abstract Classes and Interfaces",
+                link: "https://github.com/CoderJ01/man-made-objects-objects",
+                image: objectsJava
+            },
+            {
+                heading1: "Pig",
+                heading2: "Java",
+                link: "https://github.com/CoderJ01/pig-dice-game",
+                image: diceJava
+            },
+            {
+                heading1: "Uno",
+                heading2: "Java",
+                link: "https://github.com/CoderJ01/uno-card-game",
+                image: cardJava
+            },
+            {
+                heading1: "Find the Gold",
+                heading2: "Java: GUI",
+                link: "https://github.com/CoderJ01/find-the-gold",
+                image: javaGUI
+            },
+        ]
+    },
+];
+
+export const certificates = [
+    {
+        title: "Certificates",
+        content: [
+            {
+                heading1: null,
+                heading2: "Full Stack Web Development",
+                link: "https://drive.google.com/file/d/1JcSJQaV1CNxyQLWpByOH89N3S9MKuuP8/view",
+                image: fullstack
+            },
+            {
+                heading1: null,
+                heading2: "Microsoft Azure Fundamentals",
+                link: "https://www.credly.com/badges/03c4183e-6f52-4a27-8022-d5477a06b13e/public_url",
+                image: microsoft
+            },
+            {
+                heading1: null,
+                heading2: "Object-Oriented Programming (Java)",
+                link: "https://www.credly.com/badges/d0eac23d-6ab9-414a-8295-e890d27257b8/public_url",
+                image: objectOriented
+            },
+        ]
+    },
+];
+
+export const resumeObj = [
+    {
+        title: "Résumé",
+        content: [
+            {
+                heading1: null,
+                heading2: null,
+                link: "https://drive.google.com/file/d/1wnhWdnDE94cupE4AdnYXVwHoP-ZTn3ZX/view",
+                image: resume
+            },
+        ]
+    },
+];
 
 export const sections = [
     {
