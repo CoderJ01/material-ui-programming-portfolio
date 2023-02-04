@@ -5,7 +5,12 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Typography } from '@mui/material';
 import Card from '../../components/Card/Card.component';
-import { frontend } from './Skills.data';
+import { 
+    frontend, 
+    backend, 
+    database, 
+    miscellaneous } 
+from './Skills.data';
 
 const Skills = () => {
     return (
@@ -18,6 +23,9 @@ const Skills = () => {
                         <Grid container spacing={10} sx={{ marginTop: '10px' }}>
                             <Grid xs={6}>
                                 <Card dataObj={frontend}/>
+                                <Card dataObj={backend}/>
+                                <Card dataObj={database}/>
+                                <Card dataObj={miscellaneous}/>
                             </Grid>
                         </Grid>
                     </Box>
