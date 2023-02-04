@@ -37,7 +37,9 @@ const Skills = () => {
                                 },
                             }}
                             >
-                                <Paper elevation={3} />
+                                <Paper elevation={3} sx={{ textAlign: 'center' }}>
+                                    <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
+                                </Paper>
                             </Box>
                         </Grid>
                         <Grid xs={6}>
