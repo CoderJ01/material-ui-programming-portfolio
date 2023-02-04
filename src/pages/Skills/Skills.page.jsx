@@ -43,7 +43,7 @@ const Skills = () => {
                                         <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
                                     </Container>
                                     
-                                    <Grid container spacing={2} sx={{ marginTop: '-11%'}}>
+                                    <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
                                         <Grid item xs={6}>
                                             <Container>
                                                 <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
