@@ -18,7 +18,7 @@ const Card = ({ dataObj = [] }) => {
                     m: 1,
                     width: '100%',
                     height: 470,
-                    backgroundColor: 'rgb(255, 253, 208)'
+                    backgroundColor: 'white'
                     },
                 }}
             >
