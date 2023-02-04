@@ -19,8 +19,8 @@ const ContactMe = () => {
                     <CardContent>
                         
                     </CardContent>
-                    <CardActions>
-                        <Button size="small">Learn More</Button>
+                    <CardActions sx={{justifyContent: 'center'}}>
+                        <Button variant="contained" size="small">Learn More</Button>
                     </CardActions>
                 </Card>
                 </Box>
