@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
-import CheckColor from './Card.util';
+import SetCheckmarkColor from './Card.util';
 
 const Card = ({ dataObj = [] }) => {
     let checkColor;
@@ -30,7 +30,7 @@ const Card = ({ dataObj = [] }) => {
                     <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
                     {
                         Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
-                            checkColor = CheckColor(dataObj.langauge[i].proficiency);
+                            checkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
                             return (
                                 <Grid item xs={6}>
                                 <Container>
