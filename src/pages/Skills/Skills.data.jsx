@@ -64,6 +64,10 @@ export const backend = {
             proficiency: 2
         },
         {
+            name: "ORM",
+            proficiency: 1
+        },
+        {
             name: "GraphQL",
             proficiency: 1
         },
