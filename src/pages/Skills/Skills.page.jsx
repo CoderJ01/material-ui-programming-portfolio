@@ -11,6 +11,7 @@ import {
     database, 
     miscellaneous } 
 from './Skills.data';
+import Paper from '@mui/material/Paper';
 
 const Skills = () => {
     return (
@@ -19,6 +20,24 @@ const Skills = () => {
             <Container maxWidth="md">
                 <Box sx={{ height: '185vh', backgroundColor: 'rgb(255, 253, 208)' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}}>Skills and Knowlegde</Typography>
+                    <Container>
+                    <Box
+                        sx={{
+                            display: 'flex',
+                            flexWrap: 'wrap',
+                            '& > :not(style)': {
+                            m: 1,
+                            width: '100%',
+                            height: 128,
+                            },
+                        }}
+                        >
+                        <Paper elevation={8} sx={{ textAlign: 'center'}}>
+                            <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Description</Typography>
+                            <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}></Typography>
+                        </Paper>
+                    </Box>
+                    </Container>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={10} sx={{ marginTop: '10px' }}>
                             <Card dataObj={frontend}/>
