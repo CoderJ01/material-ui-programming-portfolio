@@ -6,6 +6,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import Card from '../../components/Card/Card.component';
 
 const Skills = () => {
     return (
@@ -29,22 +30,7 @@ const Skills = () => {
                                 },
                             }}
                             >
-                                <Paper elevation={3}>
-                                    <Container sx={{ textAlign: 'center' }}>
-                                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Heading</Typography>
-                                    </Container>
-                                    
-                                    <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
-                                        <Grid item xs={6}>
-                                            <Container>
-                                                <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
-                                                <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
-                                                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>Language</Typography>
-                                                </Container>
-                                            </Container>
-                                        </Grid>
-                                    </Grid>
-                                </Paper>
+                                <Card/>
                             </Box>
                         </Grid>
                     </Grid>
