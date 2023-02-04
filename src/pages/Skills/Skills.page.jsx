@@ -42,12 +42,17 @@ const Skills = () => {
                                     <Container sx={{ textAlign: 'center' }}>
                                         <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
                                     </Container>
-                                    <Container>
-                                        <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
-                                        <Container sx={{ marginTop: '-9%', marginLeft: '4%' }}>
-                                            <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Language</Typography>
-                                        </Container>
-                                    </Container>
+                                    
+                                    <Grid container spacing={2} sx={{ marginTop: '-11%'}}>
+                                        <Grid item xs={6}>
+                                            <Container>
+                                                <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
+                                                <Container sx={{ marginTop: '-33%', marginLeft: '6%' }}>
+                                                    <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Language</Typography>
+                                                </Container>
+                                            </Container>
+                                        </Grid>
+                                    </Grid>
                                 </Paper>
                             </Box>
                         </Grid>
