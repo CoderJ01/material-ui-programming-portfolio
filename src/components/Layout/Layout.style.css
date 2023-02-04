@@ -23,6 +23,7 @@
 
 .layoutul li a.active {
     color: white;
+    font-weight: 550;
 }
 
 /* Desktop */
