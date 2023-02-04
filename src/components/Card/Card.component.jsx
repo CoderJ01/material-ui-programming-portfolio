@@ -12,14 +12,20 @@ const Card = ({ dataObj = [] }) => {
                 <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{dataObj.title}</Typography>
             </Container>
             <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
-                <Grid item xs={6}>
-                    <Container>
-                        <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
-                        <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
-                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>Language</Typography>
-                        </Container>
-                    </Container>
-                </Grid>
+            {
+                dataObj.language.map(language => {
+                    return (
+                        <Grid item xs={6}>
+                            <Container>
+                                <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
+                                <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
+                                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{language.name}</Typography>
+                                </Container>
+                            </Container>
+                        </Grid>
+                    );
+                })
+            }
             </Grid>
         </Paper>
     );
