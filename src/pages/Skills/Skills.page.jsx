@@ -23,9 +23,12 @@ const Skills = () => {
                         <Grid container spacing={10} sx={{ marginTop: '10px' }}>
                             <Grid xs={6}>
                                 <Card dataObj={frontend}/>
-                                <Card dataObj={backend}/>
-                                <Card dataObj={database}/>
-                                <Card dataObj={miscellaneous}/>
+                               
+                                {/* <Card dataObj={database}/>
+                                <Card dataObj={miscellaneous}/> */}
+                            </Grid>
+                            <Grid xs={6}>
+                            <Card dataObj={backend}/>
                             </Grid>
                         </Grid>
                     </Box>
