@@ -9,9 +9,8 @@ const Card = ({ dataObj = [] }) => {
     return (
         <Paper elevation={3}>
             <Container sx={{ textAlign: 'center' }}>
-                <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Heading</Typography>
+                <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{dataObj.title}</Typography>
             </Container>
-            
             <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
                 <Grid item xs={6}>
                     <Container>
