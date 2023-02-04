@@ -17,20 +17,7 @@ const ContactMe = () => {
                 <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Contact Me</Typography>
                 <Card sx={{ minWidth: 275 }}>
                     <CardContent>
-                        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                        Word of the Day
-                        </Typography>
-                        <Typography variant="h5" component="div">
                         
-                        </Typography>
-                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                        adjective
-                        </Typography>
-                        <Typography variant="body2">
-                        well meaning and kindly.
-                        <br />
-                        {'"a benevolent smile"'}
-                        </Typography>
                     </CardContent>
                     <CardActions>
                         <Button size="small">Learn More</Button>
