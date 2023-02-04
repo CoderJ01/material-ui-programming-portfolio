@@ -2,10 +2,6 @@ import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom'; 
 import './Layout.style.css';
 
-const linkStyle  = {
-    color: "rgb(255, 253, 208)"
-}
-
 const Layout = () => {
     return (
         <div>
