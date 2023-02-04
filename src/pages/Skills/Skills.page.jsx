@@ -20,7 +20,7 @@ const Skills = () => {
             <CssBaseline />
             <Container maxWidth="md">
                 <Box sx={{ height: '215vh', backgroundColor: 'rgb(255, 253, 208)' }}>
-                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}}>Skills and Knowlegde</Typography>
+                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}}>Skills and Knowledge</Typography>
                     <Container>
                     <Box
                         sx={{
