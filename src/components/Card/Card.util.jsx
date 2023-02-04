@@ -2,13 +2,13 @@ const CheckColor = (proficiency) => {
     let color;
 
     if(proficiency === 3) {
-        color = "primary"
+        color = "rgb(0, 102, 225)"
     }
     else if(proficiency === 2) {
         color = "green"
     }
     else {
-        color = "yellow"
+        color = "rgb(223, 217, 29)"
     }
 
     return color;
