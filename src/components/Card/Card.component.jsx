@@ -22,7 +22,7 @@ const Card = ({ dataObj = [] }) => {
                     },
                 }}
             >
-                <Paper elevation={3}>
+                <Paper elevation={8}>
                     <Container sx={{ textAlign: 'center' }}>
                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{dataObj.title}</Typography>
                     </Container>
