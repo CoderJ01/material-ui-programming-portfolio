@@ -7,7 +7,6 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
 
 const Card = ({ dataObj = [] }) => {
-    console.log(dataObj.langauge[0].name);
     return (
         <Grid xs={6}>
             <Box
