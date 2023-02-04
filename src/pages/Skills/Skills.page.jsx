@@ -25,7 +25,20 @@ const Skills = () => {
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={10} sx={{ marginTop: '10px' }}>
                         <Grid xs={6}>
-                            <Item>xs=8</Item>
+                            <Box
+                            sx={{
+                                display: 'flex',
+                                flexWrap: 'wrap',
+                                '& > :not(style)': {
+                                m: 1,
+                                width: '100%',
+                                height: 240,
+                                backgroundColor: 'white'
+                                },
+                            }}
+                            >
+                                <Paper elevation={3} />
+                            </Box>
                         </Grid>
                         <Grid xs={6}>
                             <Item>xs=4</Item>
