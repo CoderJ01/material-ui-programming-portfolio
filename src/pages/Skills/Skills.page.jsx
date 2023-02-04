@@ -29,13 +29,13 @@ const Skills = () => {
                             '& > :not(style)': {
                             m: 1,
                             width: '100%',
-                            height: 160,
+                            height: 200,
                             },
                         }}
                         >
                         <Paper elevation={8} sx={{ textAlign: 'center'}}>
                             <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Description</Typography>
-                            <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{description}</Typography>
+                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{description}</Typography>
                         </Paper>
                     </Box>
                     </Container>
