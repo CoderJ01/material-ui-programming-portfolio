@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-const Card = () => {
+const Card = ({ dataObj = [] }) => {
     return (
         <Paper elevation={3}>
             <Container sx={{ textAlign: 'center' }}>
