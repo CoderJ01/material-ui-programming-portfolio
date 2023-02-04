@@ -24,7 +24,7 @@ const Skills = () => {
                                 '& > :not(style)': {
                                 m: 1,
                                 width: '100%',
-                                height: 400,
+                                height: 410,
                                 backgroundColor: 'white'
                                 },
                             }}
