@@ -6,6 +6,7 @@ import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Card = ({ dataObj = [] }) => {
+    console.log(dataObj.langauge[0].name);
     return (
         <Paper elevation={3}>
             <Container sx={{ textAlign: 'center' }}>
@@ -13,13 +14,13 @@ const Card = ({ dataObj = [] }) => {
             </Container>
             <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
             {
-                Array.apply(0, Array(dataObj.language.length)).map(function(x, i) {
+                Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
                     return (
                         <Grid item xs={6}>
                         <Container>
                             <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
                             <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
-                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.language[i]}</Typography>
+                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
                             </Container>
                         </Container>
                     </Grid>
