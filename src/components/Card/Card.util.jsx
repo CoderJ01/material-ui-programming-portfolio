@@ -1,17 +1,19 @@
-const colorOfCheck = (dataObj) => {
-    let color;
+// const colorOfCheck = (obj) => {
+//     let color;
 
-    if(dataObj.language.proficiency === 3) {
-        color = "primary"
-    }
-    else if(dataObj.language.proficiency === 2) {
-        color = "green"
-    }
-    else {
-        color = "yellow"
-    }
+//     console.log(obj);
 
-    return color;
-}
+//     if(obj.language.proficiency === 3) {
+//         color = "primary"
+//     }
+//     else if(obj.language.proficiency === 2) {
+//         color = "green"
+//     }
+//     else {
+//         color = "yellow"
+//     }
 
-export default colorOfCheck;
+//     return color;
+// }
+
+// export default colorOfCheck;
