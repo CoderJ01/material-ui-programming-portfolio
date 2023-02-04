@@ -1,4 +1,4 @@
-const CheckColor = (proficiency) => {
+const SetCheckmarkColor = (proficiency) => {
     let color;
 
     if(proficiency === 3) {
@@ -14,4 +14,4 @@ const CheckColor = (proficiency) => {
     return color;
 }
 
-export default CheckColor;
+export default SetCheckmarkColor;
