@@ -20,7 +20,18 @@ const ContactMe = () => {
                         
                     </CardContent>
                     <CardActions sx={{justifyContent: 'center'}}>
-                        <Button variant="contained" size="small">Learn More</Button>
+                        <Button 
+                        variant="contained" 
+                        size="small" 
+                        sx={{ 
+                            backgroundColor: 'rgb(0, 4, 55)', 
+                            color: 'rgb(255, 253, 190)',
+                            ':hover': { 
+                                backgroundColor: 'rgb(255, 253, 190)',
+                                color: 'rgb(0, 4, 55)',
+                                fontWeight: 550
+                            } 
+                        }}>Submit</Button>
                     </CardActions>
                 </Card>
                 </Box>
