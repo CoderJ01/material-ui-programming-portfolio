@@ -5,6 +5,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Typography } from '@mui/material';
 import Card from '../../components/Card/Card.component';
+import { frontend } from './Skills.data';
 
 const Skills = () => {
     return (
@@ -28,7 +29,7 @@ const Skills = () => {
                                 },
                             }}
                             >
-                                <Card/>
+                                <Card dataObj={frontend}/>
                             </Box>
                         </Grid>
                     </Grid>
