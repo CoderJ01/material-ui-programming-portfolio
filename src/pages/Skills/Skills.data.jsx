@@ -68,6 +68,10 @@ export const backend = {
             proficiency: 1
         },
         {
+            name: "C++",
+            proficiency: 1
+        },
+        {
             name: "Django",
             proficiency: 1
         },
