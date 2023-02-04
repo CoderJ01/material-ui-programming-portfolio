@@ -1,4 +1,5 @@
 export const frontend = {
+    title: "Frontend",
     langauge: [
         {
             name: "CSS",
@@ -28,6 +29,7 @@ export const frontend = {
 };
 
 export const backend = {
+    title: "Backend",
     langauge: [
         {
             name: "Java",
@@ -69,6 +71,7 @@ export const backend = {
 }
 
 export const database = {
+    title: "Database",
     langauge: [
         {
             name: "MongoDB",
@@ -82,6 +85,7 @@ export const database = {
 };
 
 export const miscellaneous = {
+    title: "Miscellaneous",
     langauge: [
         {
             name: "VS Code",
