@@ -27,9 +27,10 @@ const ContactMe = () => {
                             backgroundColor: 'rgb(0, 4, 55)', 
                             color: 'rgb(255, 253, 190)',
                             ':hover': { 
-                                backgroundColor: 'rgb(255, 253, 190)',
+                                backgroundColor: 'rgb(255, 253, 170)',
+                                border: '2px solid rgb(0, 4, 55)',
                                 color: 'rgb(0, 4, 55)',
-                                fontWeight: 550
+                                fontWeight: 650
                             } 
                         }}>Submit</Button>
                     </CardActions>
