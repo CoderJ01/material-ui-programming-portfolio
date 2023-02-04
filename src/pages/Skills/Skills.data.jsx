@@ -30,6 +30,10 @@ export const frontend = {
             proficiency: 2
         },
         {
+            name: "TypeScript",
+            proficiency: 1
+        },
+        {
             name: "Angular",
             proficiency: 1
         },
