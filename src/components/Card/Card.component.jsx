@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+// import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Card = ({ dataObj = [] }) => {
     return (
@@ -12,7 +12,7 @@ const Card = ({ dataObj = [] }) => {
                 <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{dataObj.title}</Typography>
             </Container>
             <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
-            {
+            {/* {
                 dataObj.language.map(language => {
                     return (
                         <Grid item xs={6}>
@@ -25,7 +25,7 @@ const Card = ({ dataObj = [] }) => {
                         </Grid>
                     );
                 })
-            }
+            } */}
             </Grid>
         </Paper>
     );
