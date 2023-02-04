@@ -13,27 +13,14 @@ const Skills = () => {
             <CssBaseline />
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
-                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%', backgroundColor: 'white'  }}>Skills and Knowlegde</Typography>
-                <Box sx={{ flexGrow: 1 }}>
-                    <Grid container spacing={10} sx={{ marginTop: '10px' }}>
-                        <Grid xs={6}>
-                            <Box
-                            sx={{
-                                display: 'flex',
-                                flexWrap: 'wrap',
-                                '& > :not(style)': {
-                                m: 1,
-                                width: '100%',
-                                height: 410,
-                                backgroundColor: 'white'
-                                },
-                            }}
-                            >
+                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%', backgroundColor: 'white'  }}>Skills and Knowlegde</Typography>
+                    <Box sx={{ flexGrow: 1 }}>
+                        <Grid container spacing={10} sx={{ marginTop: '10px' }}>
+                            <Grid xs={6}>
                                 <Card dataObj={frontend}/>
-                            </Box>
+                            </Grid>
                         </Grid>
-                    </Grid>
-                </Box>
+                    </Box>
                 </Box>
             </Container>
         </React.Fragment>
