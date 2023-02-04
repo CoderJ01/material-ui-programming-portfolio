@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom'; 
+import { Outlet, NavLink } from 'react-router-dom'; 
 import './Layout.style.css';
 
 const linkStyle  = {
@@ -13,16 +13,16 @@ const Layout = () => {
                 <h1>Joshua's Programming Portfolio</h1>
                 <ul className="layoutul">
                     <li>
-                        <Link to="/" style={linkStyle}>About Me</Link>
+                        <NavLink to="/" style={linkStyle}>About Me</NavLink>
                     </li>
                     <li>
-                        <Link to="/portfolio" style={linkStyle}>Portfolio</Link>
+                        <NavLink to="/portfolio" style={linkStyle}>Portfolio</NavLink>
                     </li>
                     <li>
-                        <Link to="/skills" style={linkStyle}>Skills</Link>
+                        <NavLink to="/skills" style={linkStyle}>Skills</NavLink>
                     </li>
                     <li>
-                        <Link to="/contact-me" style={linkStyle}>Contact Me</Link>
+                        <NavLink to="/contact-me" style={linkStyle}>Contact Me</NavLink>
                     </li>
                 </ul>
             </nav>
