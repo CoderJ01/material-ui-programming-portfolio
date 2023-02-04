@@ -40,30 +40,21 @@ const Skills = () => {
                             >
                                 <Paper elevation={3}>
                                     <Container sx={{ textAlign: 'center' }}>
-                                        <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
+                                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Heading</Typography>
                                     </Container>
                                     
                                     <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
                                         <Grid item xs={6}>
                                             <Container>
                                                 <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
-                                                <Container sx={{ marginTop: '-33%', marginLeft: '6%' }}>
-                                                    <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Language</Typography>
+                                                <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
+                                                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>Language</Typography>
                                                 </Container>
                                             </Container>
                                         </Grid>
                                     </Grid>
                                 </Paper>
                             </Box>
-                        </Grid>
-                        <Grid xs={6}>
-                            <Item>xs=4</Item>
-                        </Grid>
-                        <Grid xs={6}>
-                            <Item>xs=4</Item>
-                        </Grid>
-                        <Grid xs={6}>
-                            <Item>xs=8</Item>
                         </Grid>
                     </Grid>
                 </Box>
