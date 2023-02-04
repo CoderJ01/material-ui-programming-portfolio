@@ -21,15 +21,10 @@ const Skills = () => {
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%', backgroundColor: 'white'  }}>Skills and Knowlegde</Typography>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={10} sx={{ marginTop: '10px' }}>
-                            <Grid xs={6}>
-                                <Card dataObj={frontend}/>
-                               
-                                {/* <Card dataObj={database}/>
-                                <Card dataObj={miscellaneous}/> */}
-                            </Grid>
-                            <Grid xs={6}>
+                            <Card dataObj={frontend}/>
                             <Card dataObj={backend}/>
-                            </Grid>
+                            <Card dataObj={database}/>
+                            <Card dataObj={miscellaneous}/>
                         </Grid>
                     </Box>
                 </Box>
