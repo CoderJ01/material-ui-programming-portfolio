@@ -21,7 +21,7 @@ const Skills = () => {
             <CssBaseline />
             <Container maxWidth="md">
                 <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
-                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Skills and Knowlegde</Typography>
+                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%', backgroundColor: 'white'  }}>Skills and Knowlegde</Typography>
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid container spacing={10} sx={{ marginTop: '10px' }}>
                         <Grid xs={6}>
