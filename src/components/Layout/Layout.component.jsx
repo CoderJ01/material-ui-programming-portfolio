@@ -1,6 +1,11 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom'; 
 import './Layout.style.css';
+import styled from "styled-components";
+
+const linkStyle  = {
+    color: "rgb(255, 253, 208)"
+}
 
 const Layout = () => {
     return (
@@ -9,16 +14,16 @@ const Layout = () => {
                 <h1>Joshua's Programming Portfolio</h1>
                 <ul className="layoutul">
                     <li>
-                        <Link to="/">About Me</Link>
+                        <Link to="/" style={linkStyle}>About Me</Link>
                     </li>
                     <li>
-                        <Link to="/portfolio">Portfolio</Link>
+                        <Link to="/portfolio" style={linkStyle}>Portfolio</Link>
                     </li>
                     <li>
-                        <Link to="/skills">Skills</Link>
+                        <Link to="/skills" style={linkStyle}>Skills</Link>
                     </li>
                     <li>
-                        <Link to="/contact-me">Contact Me</Link>
+                        <Link to="/contact-me" style={linkStyle}>Contact Me</Link>
                     </li>
                 </ul>
             </nav>
