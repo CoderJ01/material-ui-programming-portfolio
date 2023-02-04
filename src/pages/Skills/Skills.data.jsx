@@ -6,7 +6,7 @@ export const frontend = {
             proficiency: 3
         },
         {
-            name: "React",
+            name: "React.js",
             proficiency: 2
         },
         {
@@ -20,6 +20,10 @@ export const frontend = {
         {
             name: "JavaScript",
             proficiency: 2
+        },
+        {
+            name: "Angular",
+            proficiency: 1
         },
         {
             name: "jQuery",
