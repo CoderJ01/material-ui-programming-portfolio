@@ -6,6 +6,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -37,8 +38,16 @@ const Skills = () => {
                                 },
                             }}
                             >
-                                <Paper elevation={3} sx={{ textAlign: 'center' }}>
-                                    <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
+                                <Paper elevation={3}>
+                                    <Container sx={{ textAlign: 'center' }}>
+                                        <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Heading</Typography>
+                                    </Container>
+                                    <Container>
+                                        <CheckCircleIcon sx={{ fill: 'green', marginTop: '4%'}}></CheckCircleIcon>
+                                        <Container sx={{ marginTop: '-9%', marginLeft: '4%' }}>
+                                            <Typography variant="p" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Language</Typography>
+                                        </Container>
+                                    </Container>
                                 </Paper>
                             </Box>
                         </Grid>
