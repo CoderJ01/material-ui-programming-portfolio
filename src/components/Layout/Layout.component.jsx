@@ -2,10 +2,6 @@ import React from 'react';
 import { Outlet, NavLink } from 'react-router-dom'; 
 import './Layout.style.css';
 
-const linkStyle  = {
-    color: "rgb(255, 253, 208)"
-}
-
 const Layout = () => {
     return (
         <div>
@@ -13,16 +9,16 @@ const Layout = () => {
                 <h1>Joshua's Programming Portfolio</h1>
                 <ul className="layoutul">
                     <li>
-                        <NavLink to="/" style={linkStyle}>About Me</NavLink>
+                        <NavLink to="/">About Me</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/portfolio" style={linkStyle}>Portfolio</NavLink>
+                        <NavLink to="/portfolio">Portfolio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/skills" style={linkStyle}>Skills</NavLink>
+                        <NavLink to="/skills">Skills</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact-me" style={linkStyle}>Contact Me</NavLink>
+                        <NavLink to="/contact-me">Contact Me</NavLink>
                     </li>
                 </ul>
             </nav>
