@@ -18,6 +18,14 @@ export const frontend = {
             proficiency: 2
         },
         {
+            name: "Material UI",
+            proficiency: 2
+        },
+        {
+            name: "Bootstrap",
+            proficiency: 2
+        },
+        {
             name: "JavaScript",
             proficiency: 2
         },
@@ -56,8 +64,8 @@ export const backend = {
             proficiency: 2
         },
         {
-            name: "Express.js",
-            proficiency: 2
+            name: "GraphQL",
+            proficiency: 1
         },
         {
             name: "Mongoose (ODM)",
