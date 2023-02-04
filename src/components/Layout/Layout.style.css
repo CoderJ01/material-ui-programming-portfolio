@@ -17,14 +17,6 @@
     list-style-type: none;
 }
 
-.layoutul li a {
-    color: rgb(255, 253, 208);
-}
-
-.layoutul li a:focus {
-    color: white;
-}
-
 /* Desktop */
 @media screen and (min-width: 1280px) {
     .layoutnav {
