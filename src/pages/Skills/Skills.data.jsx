@@ -108,6 +108,10 @@ export const miscellaneous = {
             proficiency: 3
         },
         {
+            name: "GitHub Desktop",
+            proficiency: 3
+        },
+        {
             name: "Eclipse",
             proficiency: 2
         },
