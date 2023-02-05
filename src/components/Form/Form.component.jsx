@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import { Typography } from '@mui/material';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
 import { isValidEmail } from './Form.utils';
 import InputSection from '../InputSection/InputSection.component';
