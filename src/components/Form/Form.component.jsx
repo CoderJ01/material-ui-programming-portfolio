@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import emailjs from 'emailjs-com';
 import { isValidEmail } from './Form.utils';
 import InputSection from '../InputSection/InputSection.component';
+import PortfolioButton from '../PortfolioButton/PortfolioButton.component';
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -47,21 +48,7 @@ const Form = () => {
             <InputSection fromTop={'-5%'} label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             <InputSection fromTop={'-5%'} label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{justifyContent: 'center'}}>
-                <Button 
-                    variant="contained" 
-                    size="small" 
-                    sx={{ 
-                        backgroundColor: 'rgb(0, 4, 55)', 
-                        color: 'rgb(255, 253, 190)',
-                        ':hover': { 
-                            backgroundColor: 'rgb(255, 253, 170)',
-                            border: '2px solid rgb(0, 4, 55)',
-                            color: 'rgb(0, 4, 55)',
-                            fontWeight: 650
-                        } 
-                    }}
-                    onClick={submit}
-                >Submit</Button>
+                <PortfolioButton event={submit} label={"Submit"}/>
             </CardActions>
             <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
         </Card>
