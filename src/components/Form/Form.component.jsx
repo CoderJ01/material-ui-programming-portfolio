@@ -42,10 +42,10 @@ const Form = () => {
 
     return (
         <Card sx={{ minWidth: 275 }}>
-            <InputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
-            <InputSection fromTop={'-5%'} label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
-            <InputSection fromTop={'-5%'} label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
-            <InputSection fromTop={'-5%'} label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
+            <InputSection fromTop={'0'}label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
+            <InputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
+            <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
+            <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{justifyContent: 'center'}}>
                 <PortfolioButton event={submit} label={"Submit"}/>
             </CardActions>
