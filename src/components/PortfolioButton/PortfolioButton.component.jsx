@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-// import Confirmation from '../Confirmation/Confirmation.component';
+import Confirmation from '../Confirmation/Confirmation.component';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
@@ -44,7 +44,7 @@ const PortfolioButton = ({ event, label }) => {
             >
                 {label}
             </Button>
-            <Modal
+            {/* <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
@@ -58,7 +58,8 @@ const PortfolioButton = ({ event, label }) => {
                         Your message will be received shortly. Wait for up to 48 hours for a response. Have a nice day!
                     </Typography>
                 </Box>
-            </Modal>
+            </Modal> */}
+            <Confirmation pop={open} unpop={handleClose}/>
         </div>
     );
 }
