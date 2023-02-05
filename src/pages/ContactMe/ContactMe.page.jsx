@@ -34,7 +34,7 @@ const ContactMe = () => {
                         </Box>
                     </CardContent>
                     {/* two  */}
-                    <CardContent sx={{ textAlign: 'left' }}>
+                    <CardContent sx={{ textAlign: 'left', marginTop: '-5%' }}>
                         <Container sx={{ marginLeft: '-3%'}}>
                             <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Email</Typography>
                         </Container>
@@ -50,7 +50,7 @@ const ContactMe = () => {
                         </Box>
                     </CardContent>
                     {/* three */}
-                    <CardContent sx={{ textAlign: 'left' }}>
+                    <CardContent sx={{ textAlign: 'left', marginTop: '-5%' }}>
                         <Container sx={{ marginLeft: '-3%'}}>
                             <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Subject</Typography>
                         </Container>
@@ -66,7 +66,7 @@ const ContactMe = () => {
                         </Box>
                     </CardContent>
                     {/* four */}
-                    <CardContent sx={{ textAlign: 'left' }}>
+                    <CardContent sx={{ textAlign: 'left', marginTop: '-5%'}}>
                         <Container sx={{ marginLeft: '-3%'}}>
                             <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Message</Typography>
                         </Container>
