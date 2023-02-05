@@ -42,7 +42,7 @@ const Form = () => {
 
     return (
         <Card sx={{ minWidth: 275 }}>
-            <InputSection fromTop={'0'}label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
+            <InputSection fromTop={'0'} label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
             <InputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
             <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
