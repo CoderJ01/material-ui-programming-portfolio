@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Typography } from '@mui/material';
-import CardList from '../../components/CardList/CardList.component';
+import PortfolioCard from '../../components/PortfolioCard/PortfolioCard.component';
 import { 
     frontend, 
     backend, 
@@ -41,10 +41,10 @@ const Skills = () => {
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={10} sx={{ marginTop: '10px' }}>
-                            <CardList dataObj={frontend}/>
-                            <CardList dataObj={backend}/>
-                            <CardList dataObj={database}/>
-                            <CardList dataObj={miscellaneous}/>
+                            <PortfolioCard dataObj={frontend}/>
+                            <PortfolioCard dataObj={backend}/>
+                            <PortfolioCard dataObj={database}/>
+                            <PortfolioCard dataObj={miscellaneous}/>
                         </Grid>
                     </Box>
                 </Box>

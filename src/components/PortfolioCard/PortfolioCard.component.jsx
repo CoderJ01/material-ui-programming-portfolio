@@ -5,9 +5,9 @@ import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
-import SetCheckmarkColor from './CardList.util';
+import SetCheckmarkColor from './PortfolioCard.util';
 
-const CardList = ({ dataObj = [] }) => {
+const PortfolioCard = ({ dataObj = [] }) => {
     let checkColor;
     return (
         <Grid xs={6}>
@@ -50,4 +50,4 @@ const CardList = ({ dataObj = [] }) => {
     );
 }
 
-export default CardList;
+export default PortfolioCard;
