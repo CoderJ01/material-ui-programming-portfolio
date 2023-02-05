@@ -35,9 +35,11 @@ const Form = () => {
             setMessage('');
             setEmailSent(true);
             console.log('The email should be sent.');
+            return true;
         }
         else {
             alert('Please fill in all fields.');
+            return false;
         }
     }
 
