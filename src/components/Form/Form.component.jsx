@@ -47,54 +47,7 @@ const Form = () => {
     return (
         <Card sx={{ minWidth: 275 }}>
             <SingleLineInputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
-            {/* two  */}
-            <CardContent sx={{ textAlign: 'left', marginTop: '-5%' }}>
-                <Container sx={{ marginLeft: '-3%'}}>
-                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Email</Typography>
-                </Container>
-                <Box
-                    component="form"
-                    sx={{
-                        '& > :not(style)': { m: 1, width: '96%', marginTop: '-1%'}, 
-                    }}
-                    noValidate
-                    autoComplete="off"
-                    >
-                    <TextField 
-                        id="outlined-basic" 
-                        variant="outlined"
-                        placeholder='Email'
-                        value={email}
-                        onChange={e => {
-                            setEmail(e.target.value)
-                        }}
-                    />
-                </Box>
-            </CardContent>
-            {/* three */}
-            <CardContent sx={{ textAlign: 'left', marginTop: '-5%' }}>
-                <Container sx={{ marginLeft: '-3%'}}>
-                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Subject</Typography>
-                </Container>
-                <Box
-                    component="form"
-                    sx={{
-                        '& > :not(style)': { m: 1, width: '96%', marginTop: '-1%'}, 
-                    }}
-                    noValidate
-                    autoComplete="off"
-                    >
-                    <TextField 
-                        id="outlined-basic" 
-                        variant="outlined"
-                        placeholder="Subject"
-                        value={subject}
-                        onChange={e => {
-                            setSubject(e.target.value)
-                        }}
-                    />
-                </Box>
-            </CardContent>
+            
             {/* four */}
             <CardContent sx={{ textAlign: 'left', marginTop: '-5%'}}>
                 <Container sx={{ marginLeft: '-3%'}}>
