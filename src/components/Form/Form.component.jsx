@@ -34,6 +34,7 @@ const Form = () => {
             setSubject('');
             setMessage('');
             setEmailSent(true);
+            console.log('The email should be sent.');
         }
         else {
             alert('Please fill in all fields.');
