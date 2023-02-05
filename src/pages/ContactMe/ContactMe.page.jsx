@@ -40,6 +40,7 @@ const ContactMe = () => {
                                 id="outlined-basic" 
                                 variant="outlined" 
                                 placeholder="Name"
+                                value={name}
                             />
                         </Box>
                     </CardContent>
@@ -60,6 +61,7 @@ const ContactMe = () => {
                                 id="outlined-basic" 
                                 variant="outlined"
                                 placeholder='Email'
+                                value={email}
                             />
                         </Box>
                     </CardContent>
@@ -80,6 +82,7 @@ const ContactMe = () => {
                                 id="outlined-basic" 
                                 variant="outlined"
                                 placeholder="Subject"
+                                value={subject}
                             />
                         </Box>
                     </CardContent>
@@ -102,6 +105,7 @@ const ContactMe = () => {
                             rows={4}
                             variant="outlined"
                             placeholder="Message"
+                            value={message}
                             />
                         </Box>
                     </CardContent>
