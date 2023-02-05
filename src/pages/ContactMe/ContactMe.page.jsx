@@ -167,7 +167,7 @@ const ContactMe = () => {
                             onClick={submit}
                         >Submit</Button>
                     </CardActions>
-                    {/* <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span> */}
+                    <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
                 </Card>
                 </Box>
             </Container>
