@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -10,6 +10,12 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 
 const ContactMe = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+
     return (
         <React.Fragment>
             <CssBaseline />
