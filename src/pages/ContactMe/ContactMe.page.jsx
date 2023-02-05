@@ -12,11 +12,6 @@ import emailjs from 'emailjs-com';
 import { isValidEmail } from './ContactMe.utils';
 
 const ContactMe = () => {
-    const servID = process.env.REACT_APP_SERVICE_ID;
-    const tempID = process.env.REACT_APP_TEMPLATE_ID;
-    const userID = process.env.REACT_APP_USER_ID;
-    console.log(servID);
-
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -25,9 +20,9 @@ const ContactMe = () => {
 
     const submit = () => {
         if(name && isValidEmail(email) && subject && message) {
-            const serviceId = 'service_id';
-            const templateId = 'template_id';
-            const userId = 'user_id';
+            const serviceId = process.env.REACT_APP_SERVICE_ID;
+            const templateId = process.env.REACT_APP_TEMPLATE_ID;
+            const userId = process.env.REACT_APP_USER_ID;
             const templateParams = {
                 name,
                 email,
