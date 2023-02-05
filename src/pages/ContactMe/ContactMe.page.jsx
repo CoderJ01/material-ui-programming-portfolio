@@ -9,6 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
+import { isValidEmail } from './ContactMe.utils';
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -16,11 +17,6 @@ const ContactMe = () => {
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
-
-    const isValidEmail = (email) => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
 
     const submit = () => {
         if(name && isValidEmail(email) && subject && message) {
