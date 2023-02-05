@@ -11,15 +11,6 @@ import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
 import { isValidEmail } from './ContactMe.utils';
 
-if(process.env.NODE_ENV) {
-    require('dotenv').config({
-        path: `${__dirname}/.env.${process.env.NODE_ENV}`
-    });   
-}
-else {
-    require('dotenv').config();
-}
-
 const ContactMe = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
