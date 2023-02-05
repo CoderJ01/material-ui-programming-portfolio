@@ -41,6 +41,9 @@ const ContactMe = () => {
                                 variant="outlined" 
                                 placeholder="Name"
                                 value={name}
+                                onChange={e => {
+                                    setName(e.target.value)
+                                }}
                             />
                         </Box>
                     </CardContent>
@@ -62,6 +65,9 @@ const ContactMe = () => {
                                 variant="outlined"
                                 placeholder='Email'
                                 value={email}
+                                onChange={e => {
+                                    setEmail(e.target.value)
+                                }}
                             />
                         </Box>
                     </CardContent>
@@ -83,6 +89,9 @@ const ContactMe = () => {
                                 variant="outlined"
                                 placeholder="Subject"
                                 value={subject}
+                                onChange={e => {
+                                    setSubject(e.target.value)
+                                }}
                             />
                         </Box>
                     </CardContent>
@@ -106,6 +115,9 @@ const ContactMe = () => {
                             variant="outlined"
                             placeholder="Message"
                             value={message}
+                            onChange={e => {
+                                setMessage(e.target.value)
+                            }}
                             />
                         </Box>
                     </CardContent>
