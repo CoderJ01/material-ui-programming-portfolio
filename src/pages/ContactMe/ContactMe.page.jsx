@@ -14,6 +14,20 @@ const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
+    const [emailSent, setEmailSent] = useState(false);
+
+    const submit = () => {
+        if(name && email && subject && message) {
+            setName('');
+            setEmail('');
+            setSubject('');
+            setMessage('');
+            setEmailSent(true);
+        }
+        else {
+            alert('Please fill in all fields.');
+        }
+    }
 
     return (
         <React.Fragment>
