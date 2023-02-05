@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
 import { isValidEmail } from './Form.utils';
-import SingleLineInputSection from '../InputSection/InputSection.component';
+import InputSection from '../InputSection/InputSection.component';
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -46,9 +46,9 @@ const Form = () => {
 
     return (
         <Card sx={{ minWidth: 275 }}>
-            <SingleLineInputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
-            <SingleLineInputSection fromTop={'-5%'} label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
-            <SingleLineInputSection fromTop={'-5%'} label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
+            <InputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
+            <InputSection fromTop={'-5%'} label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
+            <InputSection fromTop={'-5%'} label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             
             {/* four */}
             <CardContent sx={{ textAlign: 'left', marginTop: '-5%'}}>
