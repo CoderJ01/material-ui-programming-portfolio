@@ -138,4 +138,4 @@ export const miscellaneous = {
     ]
 };
 
-export const description = "Below are lists of terms related to programming. Languages or concepts with a blue check next to them are those of which I have a comprehensive grasp. With regards to languages/concepts next to green checks, I understand them well enough to use them. I have dabbled a bit with the concepts next to the yellow checks, but have less proficiency utilizing and/or understanding them.";
+export const description = "Below are lists of terms related to programming. Languages or concepts with a blue check next to them are those of which I have a comprehensive grasp. With regards to tools next to green checks, I understand them well enough to use them. I have dabbled a bit with the tools next to the yellow checks.";
