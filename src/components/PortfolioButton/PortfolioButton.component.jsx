@@ -54,7 +54,7 @@ const PortfolioButton = ({ event, label }) => {
                         Confirmation
                     </Typography>
                     <Typography id="modal-modal-description" sx={{ mt: 2, color: 'rgb(0, 4, 55)', marginTop: '0'}}>
-                        Your message will be received shortly! Wait for up to 48 hours for a response. Have a nice day;
+                        Your message will be received shortly. Wait for up to 48 hours for a response. Have a nice day!
                     </Typography>
                 </Box>
             </Modal>
