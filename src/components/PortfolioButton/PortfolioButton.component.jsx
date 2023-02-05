@@ -36,7 +36,9 @@ const PortfolioButton = ({ event, label }) => {
                         fontWeight: 650
                     } 
                 }}
-                onClick={handleOpen}
+                onClick={() => {
+                    handleOpen()
+                }}
             >
                 {label}
             </Button>
