@@ -10,8 +10,8 @@ const InputSection = ({ fromTop = 0, label, placeholder, value, setState, multiL
         <CardContent sx={{ textAlign: 'left', marginTop: fromTop }}>
             <Container sx={{ marginLeft: '-3%'}}>
                 <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>{label}</Typography>
-                {formBoxSection}
             </Container>
+            {formBoxSection}
         </CardContent>
     );
 }
