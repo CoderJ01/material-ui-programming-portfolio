@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import { isValidEmail } from './Form.utils';
 import InputSection from '../InputSection/InputSection.component';
 import PortfolioButton from '../PortfolioButton/PortfolioButton.component';
+import Confirmation from '../Confirmation/Confirmation.component';
 
 const Form = () => {
     const [name, setName] = useState('');
@@ -48,6 +49,7 @@ const Form = () => {
             <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{justifyContent: 'center'}}>
                 <PortfolioButton event={submit} label={"Submit"}/>
+                <Confirmation></Confirmation>
             </CardActions>
             <text className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</text>
         </Card>
