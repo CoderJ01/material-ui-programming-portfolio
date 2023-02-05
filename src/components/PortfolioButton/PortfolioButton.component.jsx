@@ -37,7 +37,10 @@ const PortfolioButton = ({ event, label }) => {
                         fontWeight: 650
                     } 
                 }}
-                onClick={event}
+                onClick={() => {
+                    event();
+                    handleOpen();
+                }}
             >{label}
             </Button>
             <Modal
