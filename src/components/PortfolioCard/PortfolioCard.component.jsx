@@ -33,13 +33,13 @@ const PortfolioCard = ({ dataObj = [] }) => {
                             checkmarkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
                             return (
                                 <Grid item xs={6}>
-                                <Container>
-                                    <CheckCircleIcon sx={{ fill: checkmarkColor, marginTop: '4%'}}></CheckCircleIcon>
-                                    <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
-                                        <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
+                                    <Container>
+                                        <CheckCircleIcon sx={{ fill: checkmarkColor, marginTop: '4%'}}></CheckCircleIcon>
+                                        <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
+                                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
+                                        </Container>
                                     </Container>
-                                </Container>
-                            </Grid>
+                                </Grid>
                             );
                         })
                     }
