@@ -41,7 +41,7 @@ const Form = () => {
     }
 
     return (
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ minWidth: 275, border: '5px solid rgb(0, 4, 55)', borderRadius: '10px' }}>
             <InputSection fromTop={'0'} label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
             <InputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
             <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
