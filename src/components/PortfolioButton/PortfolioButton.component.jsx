@@ -37,8 +37,8 @@ const PortfolioButton = ({ event, label }) => {
                     } 
                 }}
                 onClick={() => {
-                        handleOpen()
-                        event()
+                    handleOpen()
+                    event()
                 }}
             >
                 {label}
