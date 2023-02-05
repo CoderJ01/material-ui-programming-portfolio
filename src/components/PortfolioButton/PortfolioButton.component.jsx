@@ -17,10 +17,6 @@ const style = {
     p: 4,
 };
 
-const test = () => {
-    console.log('this button was clicked');
-}
-
 const PortfolioButton = ({ event, label }) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
@@ -42,7 +38,7 @@ const PortfolioButton = ({ event, label }) => {
                 }}
                 onClick={() => {
                     handleOpen()
-                    test();
+                    event();
                 }}
             >
                 {label}
