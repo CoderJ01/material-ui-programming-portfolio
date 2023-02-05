@@ -50,34 +50,7 @@ const Form = () => {
             <InputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
             <InputSection fromTop={'-5%'} label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
             <InputSection fromTop={'-5%'} label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
-            
-            {/* four */}
-            <CardContent sx={{ textAlign: 'left', marginTop: '-5%'}}>
-                <Container sx={{ marginLeft: '-3%'}}>
-                    <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Message</Typography>
-                </Container>
-                <Box
-                component="form"
-                sx={{
-                    '& .MuiTextField-root': { m: 1, width: '96%', marginTop: '-1%' },
-                }}
-                noValidate
-                autoComplete="off"
-                >
-                    <TextField
-                    id="filled-multiline-static"
-                    multiline
-                    rows={4}
-                    variant="outlined"
-                    placeholder="Message"
-                    value={message}
-                    onChange={e => {
-                        setMessage(e.target.value)
-                    }}
-                    />
-                </Box>
-            </CardContent>
-            {/* end */}
+            <InputSection fromTop={'-5%'} label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{justifyContent: 'center'}}>
                 <Button 
                     variant="contained" 
