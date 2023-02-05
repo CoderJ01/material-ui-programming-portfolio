@@ -2,6 +2,9 @@ import React from 'react';
 import Button from '@mui/material/Button';
 
 const PortfolioButton = ({ event, label }) => {
+    const test = () => {
+        console.log("Button was pressed");
+    }
     return (
         <div>
             <Button 
@@ -19,6 +22,7 @@ const PortfolioButton = ({ event, label }) => {
                 }}
                 onClick={() => {
                     event();
+                    test();
                 }}
             >{label}
             </Button>
