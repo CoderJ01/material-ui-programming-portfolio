@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
 
-const SingleLineInputSection = () => {
-    const [name, setName] = useState('');
+const SingleLineInputSection = ({ fromTop = 0, label, placeholder, value, setState }) => {
     return (
-        <CardContent sx={{ textAlign: 'left' }}>
+        <CardContent sx={{ textAlign: 'left', marginTop: fromTop }}>
             <Container sx={{ marginLeft: '-3%'}}>
-                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>Name</Typography>
+                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)'}}>{label}</Typography>
             </Container>
             <Box
                 component="form"
@@ -23,10 +22,10 @@ const SingleLineInputSection = () => {
                 <TextField 
                     id="outlined-basic" 
                     variant="outlined" 
-                    placeholder="Name"
-                    value={name}
+                    placeholder={placeholder}
+                    value={value}
                     onChange={e => {
-                        setName(e.target.value)
+                        setState(e.target.value)
                     }}
                 />
             </Box>
