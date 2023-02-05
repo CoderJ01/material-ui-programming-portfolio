@@ -170,8 +170,8 @@ const ContactMe = () => {
                             }}
                             onClick={submit}
                         >Submit</Button>
-                        <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
                     </CardActions>
+                    <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
                 </Card>
                 </Box>
             </Container>
