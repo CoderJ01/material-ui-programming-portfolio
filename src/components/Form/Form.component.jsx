@@ -8,8 +8,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
-import { isValidEmail } from './ContactMe.utils';
-
+import { isValidEmail } from './Form.utils';
 
 const Form = () => {
     const [name, setName] = useState('');
