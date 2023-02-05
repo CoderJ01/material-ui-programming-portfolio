@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
 import TextField from '@mui/material/TextField';
 
-const SingleLineInputSection = ({ fromTop = 0, label, placeholder, value, setState }) => {
+const InputSection = ({ fromTop = 0, label, placeholder, value, setState }) => {
     return (
         <CardContent sx={{ textAlign: 'left', marginTop: fromTop }}>
             <Container sx={{ marginLeft: '-3%'}}>
@@ -33,4 +33,4 @@ const SingleLineInputSection = ({ fromTop = 0, label, placeholder, value, setSta
     );
 }
 
-export default SingleLineInputSection;
+export default InputSection;
