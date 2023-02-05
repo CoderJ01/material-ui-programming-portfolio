@@ -31,7 +31,7 @@ const ContactMe = () => {
             emailjs.send(serviceId, templateId, templateParams, userId)
                 .then(response => console.log(response))
                 .then(error => console.log(error));
-                
+
             setName('');
             setEmail('');
             setSubject('');
@@ -168,6 +168,7 @@ const ContactMe = () => {
                                 fontWeight: 650
                             } 
                         }}>Submit</Button>
+                        <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
                     </CardActions>
                 </Card>
                 </Box>
