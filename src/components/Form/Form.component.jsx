@@ -48,7 +48,7 @@ const Form = () => {
             <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{justifyContent: 'center'}}>
-                <PortfolioButton event={submit} label={"Submit"}/>
+                <PortfolioButton event={submit} label={"Submit"} emailSent={emailSent}/>
             </CardActions>
             <text className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</text>
         </Card>
