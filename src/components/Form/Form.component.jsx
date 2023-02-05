@@ -26,6 +26,7 @@ const Form = () => {
             const templateParams = {
                 name,
                 email,
+                subject,
                 message
             };
 
