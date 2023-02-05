@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import emailjs from 'emailjs-com';
 import { isValidEmail } from './Form.utils';
-import SingleLineInputSection from '../SingleLineInputSection/SingleLineInputSection.component';
+import SingleLineInputSection from '../InputSection/InputSection.component';
 
 const Form = () => {
     const [name, setName] = useState('');
