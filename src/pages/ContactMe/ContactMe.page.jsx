@@ -156,18 +156,20 @@ const ContactMe = () => {
                     {/* end */}
                     <CardActions sx={{justifyContent: 'center'}}>
                         <Button 
-                        variant="contained" 
-                        size="small" 
-                        sx={{ 
-                            backgroundColor: 'rgb(0, 4, 55)', 
-                            color: 'rgb(255, 253, 190)',
-                            ':hover': { 
-                                backgroundColor: 'rgb(255, 253, 170)',
-                                border: '2px solid rgb(0, 4, 55)',
-                                color: 'rgb(0, 4, 55)',
-                                fontWeight: 650
-                            } 
-                        }}>Submit</Button>
+                            variant="contained" 
+                            size="small" 
+                            sx={{ 
+                                backgroundColor: 'rgb(0, 4, 55)', 
+                                color: 'rgb(255, 253, 190)',
+                                ':hover': { 
+                                    backgroundColor: 'rgb(255, 253, 170)',
+                                    border: '2px solid rgb(0, 4, 55)',
+                                    color: 'rgb(0, 4, 55)',
+                                    fontWeight: 650
+                                } 
+                            }}
+                            onClick={submit}
+                        >Submit</Button>
                         <span className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</span>
                     </CardActions>
                 </Card>
