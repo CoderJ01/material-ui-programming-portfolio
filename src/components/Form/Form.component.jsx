@@ -47,6 +47,8 @@ const Form = () => {
     return (
         <Card sx={{ minWidth: 275 }}>
             <SingleLineInputSection label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
+            <SingleLineInputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
+            <SingleLineInputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             
             {/* four */}
             <CardContent sx={{ textAlign: 'left', marginTop: '-5%'}}>
