@@ -15,7 +15,11 @@ const style = {
     border: '3px solid rgb(0, 4, 55)',
     boxShadow: 24,
     p: 4,
-  };
+};
+
+const test = () => {
+    console.log('this button was clicked');
+}
 
 const PortfolioButton = ({ event, label }) => {
     const [open, setOpen] = React.useState(false);
@@ -38,6 +42,7 @@ const PortfolioButton = ({ event, label }) => {
                 }}
                 onClick={() => {
                     handleOpen()
+                    test();
                 }}
             >
                 {label}
