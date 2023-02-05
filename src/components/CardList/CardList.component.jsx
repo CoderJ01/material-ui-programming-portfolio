@@ -7,7 +7,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
 import SetCheckmarkColor from './Card.util';
 
-const Card = ({ dataObj = [] }) => {
+const CardList = ({ dataObj = [] }) => {
     let checkColor;
     return (
         <Grid xs={6}>
@@ -50,4 +50,4 @@ const Card = ({ dataObj = [] }) => {
     );
 }
 
-export default Card;
+export default CardList;
