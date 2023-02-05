@@ -8,6 +8,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -18,6 +19,19 @@ const ContactMe = () => {
 
     const submit = () => {
         if(name && email && subject && message) {
+            const serviceId = 'service_id';
+            const templateId = 'template_id';
+            const userId = 'user_id';
+            const templateParams = {
+                name,
+                email,
+                message
+            };
+
+            emailjs.send(serviceId, templateId, templateParams, userId)
+                .then(response => console.log(response))
+                .then(error => console.log(error));
+                
             setName('');
             setEmail('');
             setSubject('');
