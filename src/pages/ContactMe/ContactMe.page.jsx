@@ -17,8 +17,13 @@ const ContactMe = () => {
     const [message, setMessage] = useState('');
     const [emailSent, setEmailSent] = useState(false);
 
+    const isValidEmail = (email) => {
+        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return regex.test(String(email).toLowerCase());
+    };
+
     const submit = () => {
-        if(name && email && subject && message) {
+        if(name && isValidEmail(email) && subject && message) {
             const serviceId = 'service_id';
             const templateId = 'template_id';
             const userId = 'user_id';
@@ -42,11 +47,6 @@ const ContactMe = () => {
             alert('Please fill in all fields.');
         }
     }
-
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
 
     return (
         <React.Fragment>
