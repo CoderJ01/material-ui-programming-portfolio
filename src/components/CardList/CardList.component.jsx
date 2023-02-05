@@ -5,7 +5,7 @@ import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
-import SetCheckmarkColor from './Card.util';
+import SetCheckmarkColor from './CardList.util';
 
 const CardList = ({ dataObj = [] }) => {
     let checkColor;
