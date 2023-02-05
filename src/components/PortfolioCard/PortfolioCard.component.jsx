@@ -8,7 +8,7 @@ import Box from '@mui/material/Box';
 import SetCheckmarkColor from './PortfolioCard.util';
 
 const PortfolioCard = ({ dataObj = [] }) => {
-    let checkColor;
+    let checkmarkColor;
     return (
         <Grid xs={6}>
             <Box
@@ -30,11 +30,11 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}}>
                     {
                         Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
-                            checkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
+                            checkmarkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
                             return (
                                 <Grid item xs={6}>
                                 <Container>
-                                    <CheckCircleIcon sx={{ fill: checkColor, marginTop: '4%'}}></CheckCircleIcon>
+                                    <CheckCircleIcon sx={{ fill: checkmarkColor, marginTop: '4%'}}></CheckCircleIcon>
                                     <Container sx={{ marginTop: '-36%', marginLeft: '6%' }}>
                                         <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
                                     </Container>
