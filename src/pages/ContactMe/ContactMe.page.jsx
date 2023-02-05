@@ -36,7 +36,11 @@ const ContactMe = () => {
                             noValidate
                             autoComplete="off"
                             >
-                            <TextField id="outlined-basic" variant="outlined"/>
+                            <TextField 
+                                id="outlined-basic" 
+                                variant="outlined" 
+                                placeholder="Name"
+                            />
                         </Box>
                     </CardContent>
                     {/* two  */}
@@ -52,7 +56,11 @@ const ContactMe = () => {
                             noValidate
                             autoComplete="off"
                             >
-                            <TextField id="outlined-basic" variant="outlined"/>
+                            <TextField 
+                                id="outlined-basic" 
+                                variant="outlined"
+                                placeholder='Email'
+                            />
                         </Box>
                     </CardContent>
                     {/* three */}
@@ -68,7 +76,11 @@ const ContactMe = () => {
                             noValidate
                             autoComplete="off"
                             >
-                            <TextField id="outlined-basic" variant="outlined"/>
+                            <TextField 
+                                id="outlined-basic" 
+                                variant="outlined"
+                                placeholder="Subject"
+                            />
                         </Box>
                     </CardContent>
                     {/* four */}
@@ -89,6 +101,7 @@ const ContactMe = () => {
                             multiline
                             rows={4}
                             variant="outlined"
+                            placeholder="Message"
                             />
                         </Box>
                     </CardContent>
