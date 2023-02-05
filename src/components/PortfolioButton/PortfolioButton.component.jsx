@@ -17,7 +17,7 @@ const style = {
     p: 4,
 };
 
-const PortfolioButton = ({ event, label, emailSent }) => {
+const PortfolioButton = ({ event, label }) => {
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -37,13 +37,8 @@ const PortfolioButton = ({ event, label, emailSent }) => {
                     } 
                 }}
                 onClick={() => {
-                    if(emailSent) {
                         handleOpen()
-                        event();
-                    }
-                    else {
-                        alert('Please fill in all fields.');
-                    }
+                        event()
                 }}
             >
                 {label}
