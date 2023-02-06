@@ -5,7 +5,7 @@ import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
 
-const Section = ({ dataObj = [], fromTop, sectionHeight, topBoxHeight = 100 }) => {
+const Section = ({ dataObj = [], sectionHeight, topBoxHeight = 100 }) => {
     return (
         <Container maxWidth="md">
             <Box sx={{ minHeight: sectionHeight + 'vh', textAlign: 'center' }}>
