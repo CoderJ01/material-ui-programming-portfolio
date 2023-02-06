@@ -1,6 +1,45 @@
 /* iPad Pro */
 @media screen and (max-width: 1024px) {
+    .portfolio-card-grid {
+        height: 1000px;
+        margin-left: 5%;
+        width: 90%;
+    }
 
+    .portfolio-card-box {
+        min-height: 800px;
+    }
+
+    .portfolio-card-paper {
+        min-height: 800px;
+    }
+
+    .portfolio-card-heading {
+        font-size: 300%;
+    }
+
+    .portfolio-card-grid-2 {
+        margin-left: 5%;
+        margin-top: -10%;
+    }
+
+    .portfolio-card-container {
+        height: 100px;
+        margin-top: 5%;
+    }
+
+    .language-container {
+        margin-left: 12%;
+        margin-top: -25%;
+    }
+
+    .portfolio-card-check {
+        font-size: 250%;
+    }
+
+    .portfolio-card-language {
+        font-size: 250%;
+    }
 }
 
 /* iPad */
