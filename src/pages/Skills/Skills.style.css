@@ -1,11 +1,44 @@
 /* iPad Pro */
 @media screen and (max-width: 1024px) {
+    .skills-container {
+        height: 600px;
+    }
 
+    .skills-box {
+        min-height: 540px;
+    }
+
+    .skills-paper {
+        min-height: 540px;
+    }
+
+    .skills-description-heading {
+        font-size: 300%;
+    }
+
+    .skills-description {
+        font-size: 250%;
+    }
+
+    .skills-grid {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* iPad */
 @media screen and (max-width: 768px) {
+    .skills-container {
+        height: 700px;
+    }
 
+    .skills-box {
+        min-height: 600px;
+    }
+
+    .skills-paper {
+        min-height: 600px;
+    }
 }
 
 /* Surface Duo */
