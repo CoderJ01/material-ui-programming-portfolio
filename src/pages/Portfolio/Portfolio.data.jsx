@@ -125,7 +125,7 @@ export const bootcamp =
         },
         {
             heading1: "E-commerce Back-end",
-            heading2: "Object-Relational Mapping",
+            heading2: "ORM",
             link: "https://github.com/CoderJ01/e-commerce-back-end-system",
             image: objectRelate
         },
@@ -154,7 +154,7 @@ export const bootcamp =
             image: noSQL
         },
         {
-            heading1: "React Programming Portfolio",
+            heading1: "React Portfolio",
             heading2: "React",
             link: "https://github.com/CoderJ01/react-programming-portfolio",
             image: reactPortfolio
@@ -192,7 +192,7 @@ export const selfTaught =
         },
         {
             heading1: "Computer Games",
-            heading2: "Java: Graphics and Events",
+            heading2: "Java: Graphics/Events",
             link: "https://github.com/CoderJ01/more-java-computer-games",
             image: javaCompGames
         },
