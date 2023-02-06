@@ -4,10 +4,6 @@
         height: 4700px;
     }
 
-    .about-me-heading {
-        font-size: 500%;
-    }
-    
     .about-me-avatar {
         border: 10px solid rgb(0, 4, 55);
         height: 400px;
@@ -42,10 +38,6 @@
 @media screen and (max-width: 414px) {
     .about-me-box {
         height: 4570px;
-    }
-
-    .about-me-heading {
-        font-size: 350%;
     }
 
     .about-me-avatar {
