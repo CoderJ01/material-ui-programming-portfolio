@@ -44,12 +44,68 @@
 
 /* iPad */
 @media screen and (max-width: 768px) {
+    .portfolio-card-grid {
+        height: 1000px;
+        margin-left: 4%;
+        width: 90%;
+    }
 
+    .portfolio-card-box {
+        min-height: 850px;
+    }
+
+    .portfolio-card-paper {
+        min-height: 850px;
+    }
+
+    .language-container {
+        margin-left: 15%;
+        margin-top: -35%;
+    }
+
+    .portfolio-card-grid-2 {
+        margin-left: 0%;
+        margin-top: -9%;
+    }
+
+    .portfolio-card-container {
+        margin-left: 10%;
+        margin-top: -8%;
+    }
 }
 
 /* Surface Duo */
 @media screen and (max-width: 540px) {
+    .portfolio-card-grid {
+        height: 800px;
+        margin-left: 5%;
+    }
 
+    .portfolio-card-box {
+        min-height: 700px;
+    }
+
+    .portfolio-card-paper {
+        min-height: 700px;
+    }
+
+    .language-container {
+        margin-left: 13%;
+        margin-top: -39%;
+    }
+
+    .portfolio-card-check {
+        font-size: 200%;
+    }
+
+    .portfolio-card-language {
+        font-size: 200%;
+    }
+
+    .portfolio-card-grid-2 {
+        margin-left: -15%;
+        margin-top: -9%;
+    }
 }
 
 /* iPhone 6/7/8 Plus */
