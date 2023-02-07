@@ -35,14 +35,14 @@ const Skills = () => {
                             }}
                             className='skills-box'
                             >
-                            <Paper elevation={8} sx={{ textAlign: 'center'}}  className='skills-paper'>
+                            <Paper elevation={8} sx={{ textAlign: 'center', border: '1px solid purple'}}  className='skills-paper'>
                                 <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='skills-description-heading'>Description</Typography>
                                 <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='skills-description'>{description}</Typography>
                             </Paper>
                         </Box>
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={10} sx={{ marginTop: '10px' }} className="skills-grid">
+                        <Grid container spacing={10} sx={{ marginTop: '10px', justifyContent: 'center' }} className="skills-grid">
                             <PortfolioCard dataObj={frontend}/>
                             <PortfolioCard dataObj={backend}/>
                             <PortfolioCard dataObj={database}/>
