@@ -17,7 +17,7 @@ const Portfolio = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ minHeight: '500vh', textAlign: 'center', marginTop: '6%', backgroundColor: 'rgb(255, 253, 208)' }}>
+                <Box sx={{ minHeight: '50vh', textAlign: 'center', marginTop: '6%', backgroundColor: 'rgb(255, 253, 208)' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     <Container sx={{ marginTop: '6%' }}>
                         <Section dataObj={beforeBootcamp} fromTop={0}/>
