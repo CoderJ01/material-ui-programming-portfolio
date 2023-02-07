@@ -8,7 +8,7 @@ Primarily utilizing the React component library known as Material UI, this site 
     * Material UI
 
 # Screenshot of Website
-![Alt text](.JPG?raw=true "MUI Programming Portfolio")
+![Alt text](/images/image-screenshot.JPG?raw=true "MUI Programming Portfolio")
 
 # Website Link
 
