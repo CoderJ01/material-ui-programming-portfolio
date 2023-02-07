@@ -13,7 +13,7 @@ const AboutMe = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md">
-                <Box sx={{ height: '140vh', textAlign: 'center', marginTop: '6%', backgroundColor: 'rgb(255, 253, 208)'}}  className='about-me-box'>
+                <Box sx={{ height: '155vh', textAlign: 'center', marginTop: '6%', backgroundColor: 'rgb(255, 253, 208)'}}  className='about-me-box'>
                 <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }} className='about-me-heading'>About Me</Typography>
                 <div style={{ display: 'flex', justifyContent:'center'}}>
                     <Avatar
