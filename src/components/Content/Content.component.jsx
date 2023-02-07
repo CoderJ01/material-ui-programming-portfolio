@@ -6,11 +6,11 @@ import './Content.style.css';
 
 const Content = ({ heading1, heading2, link, image }) => {
     return (
-        <Grid item xs={5} className='content-grid'>
-            <span className='content-heading-group'>
+        <Grid item xs={5} className="content-grid">
+            <div className="content-heading-group">
                 <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }} className="content-heading-1">{heading1}</Typography>
                 <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }} className="content-heading-2">{heading2}</Typography>
-            </span>
+            </div>
             <Box
                 sx={{
                     width: '100%',
