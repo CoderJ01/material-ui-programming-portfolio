@@ -1,8 +1,11 @@
 /* iPad Pro */
 @media screen and (max-width: 1024px) {
     .content-heading-group {
+        margin-left: 25%;
         text-align: center;
+        width: 200%;
     }
+    
     .content-heading-1 {
         font-size: 180%;
     }
