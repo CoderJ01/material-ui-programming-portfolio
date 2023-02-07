@@ -69,8 +69,8 @@
     }
 
     .portfolio-card-container {
-        margin-left: 10%;
-        margin-top: -8%;
+        margin-left: -5%;
+        margin-top: -0%;
     }
 }
 
@@ -106,6 +106,11 @@
         margin-left: -15%;
         margin-top: -9%;
     }
+
+    .portfolio-card-container {
+        margin-left: 7%;
+        margin-top: -5%;
+    }
 }
 
 /* iPhone 6/7/8 Plus */
@@ -138,7 +143,12 @@
 
     .portfolio-card-grid-2 {
         margin-left: -25%;
-        margin-top: -9%;
+        margin-top: -17%;
+    }
+
+    .portfolio-card-container {
+        margin-left: 17%;
+        margin-top: -5%;
     }
 }
 
@@ -152,14 +162,27 @@
     .language-container {
         margin-top: -50%;
     }
+
+    .portfolio-card-container {
+        margin-left: 8%;
+        margin-top: -5%;
+    }
 }
 
 /* iPhone X */
 @media screen and (max-width: 375px) and (max-height: 812px) {
     .portfolio-card-grid {
-        height: 800px;
+        height: 700px;
         margin-left: 0%;
         width: 99%;
+    }
+
+    .portfolio-card-box {
+        min-height: 400px;
+    }
+
+    .portfolio-card-paper {
+        min-height: 600px;
     }
 
     .portfolio-card-grid-2 {
@@ -172,6 +195,11 @@
 
     .portfolio-card-language {
         font-size: 140%;
+    }
+
+    .portfolio-card-container {
+        margin-left: 4%;
+        margin-top: -22%;
     }
 }
 
