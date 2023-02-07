@@ -4,7 +4,7 @@ import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Content from '../../components/Content/Content.component';
-import './Section.style.css';
+// import './Section.style.css';
 
 const Section = ({ dataObj = [], fromTop = 10 }) => {
     return (
