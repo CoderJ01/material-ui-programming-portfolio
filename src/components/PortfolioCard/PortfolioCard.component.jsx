@@ -6,12 +6,12 @@ import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
 import SetCheckmarkColor from './PortfolioCard.util';
-import './PortfolioCard.style.css';
+// import './PortfolioCard.style.css';
 
 const PortfolioCard = ({ dataObj = [] }) => {
     let checkmarkColor;
     return (
-        <Grid xs={6} className='portfolio-card-grid'>
+        <Grid xs={12} sm={8} md={8} lg={6} className='portfolio-card-grid' sx={{ border: '1px solid red'}}>
             <Box
                 sx={{
                     display: 'flex',
@@ -20,12 +20,13 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     m: 1,
                     width: '100%',
                     height: 470,
-                    backgroundColor: 'white'
+                    backgroundColor: 'white',
+                    border: '1px solid green'
                     },
                 }}
                 className='portfolio-card-box'
             >
-                <Paper elevation={8} className='portfolio-card-paper'>
+                <Paper elevation={8} className='portfolio-card-paper' sx={{ border: '2px solid blue'}}>
                     <Container sx={{ textAlign: 'center' }}>
                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='portfolio-card-heading'>{dataObj.title}</Typography>
                     </Container>
