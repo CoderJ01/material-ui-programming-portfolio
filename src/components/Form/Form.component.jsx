@@ -11,7 +11,6 @@ const Form = () => {
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
     const [message, setMessage] = useState('');
-    const [emailSent, setEmailSent] = useState(false);
 
     const submit = () => {
         if(name && isValidEmail(email) && subject && message) {
@@ -33,8 +32,6 @@ const Form = () => {
             setEmail('');
             setSubject('');
             setMessage('');
-            setEmailSent(true);
-            console.log('The email should be sent.');
             return true;
         }
         else {
@@ -49,7 +46,7 @@ const Form = () => {
             <InputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
             <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
             <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
-            <CardActions sx={{justifyContent: 'center'}}>
+            <CardActions sx={{ justifyContent: 'center'}}>
                 <PortfolioButton event={submit} label={"Submit"}/>
             </CardActions>
         </Card>
