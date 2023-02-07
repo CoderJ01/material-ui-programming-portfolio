@@ -24,7 +24,7 @@
 /* iPad */
 @media screen and (max-width: 768px) {
     .content-heading-group {
-        margin-left: 27%;
+        margin-left: 29%;
     }
 
     .content-box {
@@ -34,6 +34,10 @@
 
 /* Surface Duo */
 @media screen and (max-width: 540px) {
+    .content-heading-group {
+        margin-left: 35%;
+    }
+
     .content-box {
         border: 8px solid rgb(0, 4, 55);
         height: 450px;
@@ -44,8 +48,8 @@
 /* iPhone 6/7/8 Plus */
 @media screen and (max-width: 414px) {
     .content-heading-group {
-        margin-left: 37%;
-        width: 200%;
+        margin-left: 15%;
+        width: 250%;
     }
 
     .content-box {
