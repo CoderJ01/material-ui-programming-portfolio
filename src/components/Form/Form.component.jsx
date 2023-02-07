@@ -52,7 +52,6 @@ const Form = () => {
             <CardActions sx={{justifyContent: 'center'}}>
                 <PortfolioButton event={submit} label={"Submit"}/>
             </CardActions>
-            <text className={emailSent ? 'visible' : null }>Thank you for your message, we will be in touch in no time!</text>
         </Card>
     );
 }
