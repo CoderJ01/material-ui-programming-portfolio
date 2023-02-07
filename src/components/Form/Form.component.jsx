@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import emailjs from 'emailjs-com';
-import { isValidEmail } from './Form.utils';
+import { isValidEmail } from './Form.util';
 import InputSection from '../InputSection/InputSection.component';
 import PortfolioButton from '../PortfolioButton/PortfolioButton.component';
 

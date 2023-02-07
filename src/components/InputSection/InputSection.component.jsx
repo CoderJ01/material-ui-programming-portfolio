@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
 import CardContent from '@mui/material/CardContent';
-import { SelectInputSectionType } from './InputSection.utils';
+import { SelectInputSectionType } from './InputSection.util';
 
 const InputSection = ({ fromTop = -5, label, placeholder, value, setState, multiLine = false }) => {
     let formBoxSection = SelectInputSectionType(placeholder, value, setState, multiLine);
