@@ -13,7 +13,7 @@ import {
     description } 
 from './Skills.data';
 import Paper from '@mui/material/Paper';
-import './Skills.style.css'
+import './Skills.style.css';
 
 const Skills = () => {
     return (

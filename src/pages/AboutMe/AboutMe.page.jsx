@@ -6,7 +6,7 @@ import Avatar from '@mui/material/Avatar';
 import image from './images/01_avatar.png'
 import { Typography } from '@mui/material';
 import { paragraphs } from './AboutMe.data';
-import './AboutMe.style.css'
+import './AboutMe.style.css';
 
 const AboutMe = () => {
     return (
