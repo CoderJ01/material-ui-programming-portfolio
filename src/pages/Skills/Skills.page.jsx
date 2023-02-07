@@ -13,14 +13,14 @@ import {
     description } 
 from './Skills.data';
 import Paper from '@mui/material/Paper';
-import './Skills.style.css';
+// import './Skills.style.css';
 
 const Skills = () => {
     return (
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="md" className='skills-container-top'>
-                <Box sx={{ height: '220vh', backgroundColor: 'rgb(255, 253, 208)' }} className='skills-box'>
+                <Box sx={{ minHeight: '220vh', backgroundColor: 'rgb(255, 253, 208)' }} className='skills-box'>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}} className='skills-heading'>Skills and Knowledge</Typography>
                     <Container className='skills-container'>
                         <Box
@@ -30,7 +30,7 @@ const Skills = () => {
                                 '& > :not(style)': {
                                 m: 1,
                                 width: '100%',
-                                height: 200,
+                                minHeight: 200,
                                 },
                             }}
                             className='skills-box'
