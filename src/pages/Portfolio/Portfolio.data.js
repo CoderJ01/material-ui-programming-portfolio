@@ -107,7 +107,7 @@ export const bootcamp =
         },
         {
             heading1: "Team Profile Generator",
-            heading2: "Object-Oriented Programming (OOP)",
+            heading2: "Object-Oriented Programming",
             link: "https://github.com/CoderJ01/team-profile-generator",
             image: object
         },
@@ -247,7 +247,7 @@ export const certificates =
         },
         {
             heading1: null,
-            heading2: "Microsoft Azure Fundamentals",
+            heading2: "Azure Fundamentals",
             link: "https://www.credly.com/badges/03c4183e-6f52-4a27-8022-d5477a06b13e/public_url",
             image: microsoft
         },
