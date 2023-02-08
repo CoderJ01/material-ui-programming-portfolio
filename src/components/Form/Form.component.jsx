@@ -45,7 +45,7 @@ const Form = () => {
             <InputSection fromTop={'0'} label={"Name"} placeholder={"Name"} value={name} setState={setName}/>
             <InputSection label={"Email"} placeholder={"Email"} value={email} setState={setEmail}/>
             <InputSection label={"Subject"} placeholder={"Subject"} value={subject} setState={setSubject}/>
-            <InputSection label={"Message"} placeholder={"Messsage"} value={message} setState={setMessage} multiLine={true}/>
+            <InputSection label={"Message"} placeholder={"Message"} value={message} setState={setMessage} multiLine={true}/>
             <CardActions sx={{ justifyContent: 'center'}}>
                 <PortfolioButton event={submit} label={"Submit"}/>
             </CardActions>
