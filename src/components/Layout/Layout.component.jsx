@@ -5,9 +5,9 @@ import './Layout.style.css';
 const Layout = () => {
     return (
         <div>
-            <nav className="layoutnav">
+            <nav>
                 <h1>Joshua's Programming Portfolio</h1>
-                <ul className="layoutul">
+                <ul>
                     <li>
                         <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About Me</NavLink>
                     </li>
