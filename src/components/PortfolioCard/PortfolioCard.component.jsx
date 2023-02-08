@@ -19,7 +19,7 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     '& > :not(style)': {
                     m: 1,
                     width: '100%',
-                    height: 470,
+                    height: 530,
                     backgroundColor: 'white',
                     },
                 }}
