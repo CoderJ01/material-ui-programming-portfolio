@@ -11,7 +11,7 @@ import SetCheckmarkColor from './PortfolioCard.util';
 const PortfolioCard = ({ dataObj = [] }) => {
     let checkmarkColor;
     return (
-        <Grid xs={12} sm={8} md={8} lg={6} className='portfolio-card-grid' sx={{ border: '1px solid red'}}>
+        <Grid xs={12} sm={8} md={8} lg={6} className='portfolio-card-grid' sx={{ border: '1px solid red', width: '100%'}}>
             <Box
                 sx={{
                     display: 'flex',

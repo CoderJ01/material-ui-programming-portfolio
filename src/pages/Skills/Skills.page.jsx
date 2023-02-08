@@ -19,7 +19,7 @@ const Skills = () => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="md" className='skills-container-top'>
+            <Container maxWidth="md" className='skills-container-top' sx={{  border: '1px solid brown'}}>
                 <Box sx={{ minHeight: '220vh', backgroundColor: 'rgb(255, 253, 208)' }} className='skills-box'>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}} className='skills-heading'>Skills and Knowledge</Typography>
                     <Container className='skills-container'>
@@ -42,7 +42,7 @@ const Skills = () => {
                         </Box>
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={10} sx={{ marginTop: '10px', justifyContent: 'center' }} className="skills-grid">
+                        <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }} className="skills-grid">
                             <PortfolioCard dataObj={frontend}/>
                             <PortfolioCard dataObj={backend}/>
                             <PortfolioCard dataObj={database}/>
