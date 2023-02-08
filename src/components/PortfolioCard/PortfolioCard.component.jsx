@@ -29,7 +29,7 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     <Container sx={{ textAlign: 'center' }}>
                         <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='portfolio-card-heading'>{dataObj.title}</Typography>
                     </Container>
-                    <Grid container spacing={2} sx={{ marginTop: '-11%', marginLeft: '-5%'}} className='portfolio-card-grid-2'>
+                    <Grid container spacing={5} sx={{ marginTop: '-11%', marginLeft: '-5%'}} className='portfolio-card-grid-2'>
                     {
                         Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
                             checkmarkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
