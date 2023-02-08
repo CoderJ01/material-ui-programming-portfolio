@@ -1,7 +1,0 @@
-/* iPad Pro */
-@media screen and (max-width: 1024px) {
-    .section-grid {
-        display: flex;
-        flex-direction: column;
-    }
-}
