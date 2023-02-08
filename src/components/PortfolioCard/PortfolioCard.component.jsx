@@ -19,7 +19,7 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     '& > :not(style)': {
                     m: 1,
                     width: '100%',
-                    height: 530,
+                    height: 580,
                     backgroundColor: 'white',
                     },
                 }}
@@ -36,8 +36,8 @@ const PortfolioCard = ({ dataObj = [] }) => {
                             return (
                                 <Grid item xs={6}>
                                     <Container className='portfolio-card-container'>
-                                        <CheckCircleIcon sx={{ fill: checkmarkColor }} className='portfolio-card-check'></CheckCircleIcon>
-                                        <Container sx={{ marginTop: '-36%', marginLeft: '6%' }} className='language-container'>
+                                        <Container sx={{ display: 'flex'}}>
+                                            <CheckCircleIcon sx={{ fill: checkmarkColor }} className='portfolio-card-check'></CheckCircleIcon>
                                             <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}} className='portfolio-card-language'>{dataObj.langauge[i].name}</Typography>
                                         </Container>
                                     </Container>
