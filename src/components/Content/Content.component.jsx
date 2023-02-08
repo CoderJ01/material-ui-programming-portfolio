@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 
 const Content = ({ heading1, heading2, link, image }) => {
     return (
-        <Grid item xs={12} sm={7} md={8} lg={8} xl={6} className="content-grid">
+        <Grid item xs={10} sm={8} md={8} lg={6}className="content-grid">
             <div className="content-heading-group">
                 <Typography variant="h5" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }} className="content-heading-1">{heading1}</Typography>
                 <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', marginTop: '-3%', textTransform: 'uppercase' }} className="content-heading-2">{heading2}</Typography>
