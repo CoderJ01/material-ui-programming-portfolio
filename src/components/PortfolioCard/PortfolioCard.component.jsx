@@ -6,12 +6,11 @@ import { Typography } from '@mui/material';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import Box from '@mui/material/Box';
 import SetCheckmarkColor from './PortfolioCard.util';
-// import './PortfolioCard.style.css';
 
 const PortfolioCard = ({ dataObj = [] }) => {
     let checkmarkColor;
     return (
-        <Grid xs={12} sm={8} md={8} lg={6} className='portfolio-card-grid' sx={{ width: '100%'}}>
+        <Grid xs={12} sm={8} md={8} lg={6} sx={{ width: '100%'}}>
             <Box
                 sx={{
                     display: 'flex',
@@ -23,22 +22,21 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     backgroundColor: 'white',
                     },
                 }}
-                className='portfolio-card-box'
             >
                 <Paper elevation={8} className='portfolio-card-paper'>
                     <Container sx={{ textAlign: 'center' }}>
-                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='portfolio-card-heading'>{dataObj.title}</Typography>
+                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{dataObj.title}</Typography>
                     </Container>
-                    <Grid container spacing={5} className='portfolio-card-grid-2'>
+                    <Grid container spacing={5}>
                     {
                         Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
                             checkmarkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
                             return (
                                 <Grid item xs={6}>
-                                    <Container className='portfolio-card-container'>
+                                    <Container>
                                         <Container sx={{ display: 'flex'}}>
-                                            <CheckCircleIcon sx={{ fill: checkmarkColor }} className='portfolio-card-check'></CheckCircleIcon>
-                                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}} className='portfolio-card-language'>{dataObj.langauge[i].name}</Typography>
+                                            <CheckCircleIcon sx={{ fill: checkmarkColor }}></CheckCircleIcon>
+                                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
                                         </Container>
                                     </Container>
                                 </Grid>

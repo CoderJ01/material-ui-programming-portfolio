@@ -13,16 +13,15 @@ import {
     description } 
 from './Skills.data';
 import Paper from '@mui/material/Paper';
-// import './Skills.style.css';
 
 const Skills = () => {
     return (
         <React.Fragment>
             <CssBaseline />
-            <Container maxWidth="md" className='skills-container-top'>
-                <Box sx={{ minHeight: '220vh', backgroundColor: 'rgb(255, 253, 208)' }} className='skills-box'>
-                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}} className='skills-heading'>Skills and Knowledge</Typography>
-                    <Container className='skills-container'>
+            <Container maxWidth="md">
+                <Box sx={{ minHeight: '220vh', backgroundColor: 'rgb(255, 253, 208)' }}>
+                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)', textAlign: 'center', marginTop: '6%'}}>Skills and Knowledge</Typography>
+                    <Container>
                         <Box
                             sx={{
                                 display: 'flex',
@@ -33,16 +32,15 @@ const Skills = () => {
                                 minHeight: 200,
                                 },
                             }}
-                            className='skills-box'
                             >
-                            <Paper elevation={8} sx={{ textAlign: 'center'}}  className='skills-paper'>
-                                <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='skills-description-heading'>Description</Typography>
-                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }} className='skills-description'>{description}</Typography>
+                            <Paper elevation={8} sx={{ textAlign: 'center'}}>
+                                <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Description</Typography>
+                                <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{description}</Typography>
                             </Paper>
                         </Box>
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
-                        <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }} className="skills-grid">
+                        <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }}>
                             <PortfolioCard dataObj={frontend}/>
                             <PortfolioCard dataObj={backend}/>
                             <PortfolioCard dataObj={database}/>
