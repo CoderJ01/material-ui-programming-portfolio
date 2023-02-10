@@ -11,7 +11,7 @@ const ContactMe = () => {
             <CssBaseline />
             <Container maxWidth="sm">
                 <Box sx={{ minHeight: '85vh', marginTop: '9%', textAlign: 'center' }}>
-                <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Contact Me</Typography>
+                    <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Contact Me</Typography>
                     <Form />
                 </Box>
             </Container>
