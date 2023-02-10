@@ -38,7 +38,7 @@ import microsoft from './images/04_Certificates/02_Microsoft-Azure-Fundamentals.
 import objectOriented from './images/04_Certificates/03_Intro-to-OOP.JPG'
 
 // resume
-import resume from './images/05_Résumé/01_resume.JPG'
+import resumeImage from './images/05_Résumé/01_resume.JPG'
 
 export const beforeBootcamp = 
 {
@@ -260,7 +260,7 @@ export const certificates =
     ]
 }
 
-export const resumeObj = 
+export const resume = 
 {
     title: "Résumé",
     content: [
@@ -268,7 +268,7 @@ export const resumeObj =
             heading1: null,
             heading2: null,
             link: "https://drive.google.com/file/d/1wnhWdnDE94cupE4AdnYXVwHoP-ZTn3ZX/view",
-            image: resume
+            image: resumeImage
         },
     ]
 }
