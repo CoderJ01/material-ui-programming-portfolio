@@ -8,7 +8,7 @@ import {
     bootcamp, 
     selfTaught, 
     certificates, 
-    resumeObj 
+    resume 
 } from './Portfolio.data';
 import Section from '../../components/Section/Section.component';
 
@@ -24,7 +24,7 @@ const Portfolio = () => {
                         <Section dataObj={bootcamp}/>
                         <Section dataObj={selfTaught}/>
                         <Section dataObj={certificates}/>
-                        <Section dataObj={resumeObj}/>
+                        <Section dataObj={resume}/>
                     </Container>
                 </Box>
             </Container>
