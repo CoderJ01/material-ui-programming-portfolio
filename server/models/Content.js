@@ -7,18 +7,18 @@ const ContentSchema = new mongoose.Schema({
     },
     heading1: {
         type: String,
-        require: true
+        required: true
     },
     heading2: {
         type: String
     },
     link: {
         type: String,
-        require: true
+        required: true
     }, 
     image: {
         type: String,
-        require: true
+        required: true
     }
 });
 
