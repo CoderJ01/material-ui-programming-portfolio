@@ -52,6 +52,7 @@ const SectionType = new GraphQLObjectType({
 const ContentType = new GraphQLObjectType({
     name: 'Content',
     fields: () => ({
+        _id: { type: GraphQLID },
         heading1: { type: GraphQLNonNull(GraphQLString) },
         heading2: { type: GraphQLString },
         link: { type: GraphQLNonNull(GraphQLString) },
