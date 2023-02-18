@@ -117,3 +117,67 @@ const RootQuery = new GraphQLObjectType({
         }
     }
 });
+
+const mutation = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+        // ADD //
+        addSkillCategory: {
+            type: SkillCategoryType,
+            args: {
+                title: { type: new GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent, args) {
+                const skillCategory = new SkillCategory({
+                    title: args.title
+                });
+                return skillCategory.save();
+            }
+        },
+        addLanguage: {
+            args: {
+                name: { type: new GraphQLNonNull(GraphQLString) },
+                proficiency: { type: new GraphQLNonNull(GraphQLInt) },
+                skillCategoryId: { type: new GraphQLNonNull(GraphQLID) }
+            },
+            resolve(parent, args) {
+                const language = new Language({
+                    name: args.name,
+                    proficiency: args.proficiency,
+                    skillCategoryId: args.skillCategory
+                });
+                return language.save();
+            }
+        },
+        addSection: {
+            args: {
+                title: { type: new GraphQLNonNull(GraphQLString) },
+            },
+            resolve(parent, args) {
+                const section = new Section({
+                    title: args.title
+                });
+                return section.save();
+            }
+        },
+        addContent: {
+            args: {
+                heading1: { type: new GraphQLNonNull(GraphQLString) },
+                heading2: { type: GraphQLString },
+                link: { type: new GraphQLNonNull(GraphQLString) },
+                image: { type: new GraphQLNonNull(GraphQLString) },
+                contentId: { type: new GraphQLNonNull(GraphQLID) }
+            },
+            resolve(parent, args) {
+                const content = new Content({
+                    heading1: args.heading1,
+                    heading2: args.heading2,
+                    link: args.link,
+                    image: args.image,
+                    contentId: args.contentId
+                });
+                return content.save();
+            }
+        }
+    }
+});
