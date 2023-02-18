@@ -13,3 +13,18 @@ const {
     GraphQLString,
     GraphQLInt
 } = require('graphql');
+
+// SkillCategory Type
+const SkillCategoryType = new GraphQLObjectType({
+    name: 'SkillCategory',
+    fields: () => ({
+        _id: { type: GraphQLID },
+        title: { type: GraphQLNonNull(GraphQLString) },
+        languages: {
+            type: LanguageType,
+            resolve(parent, args) {
+                return Language.find();
+            }
+        }
+    })
+})
