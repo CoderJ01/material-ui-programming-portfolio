@@ -39,11 +39,13 @@ const LanguageType = new GraphQLObjectType({
 // Section Type
 const SectionType = new GraphQLObjectType({
     name: 'Section',
-    _id: { type: GraphQLID },
-    title: { type: GraphQLNonNull(GraphQLString) },
-    content: {
-        type: new GraphQLList(ContentType)
-    }
+    fields: () => ({
+        _id: { type: GraphQLID },
+        title: { type: GraphQLNonNull(GraphQLString) },
+        content: {
+            type: new GraphQLList(ContentType)
+        }
+    }),
 });
 
 // Content Type
