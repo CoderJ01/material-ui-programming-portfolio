@@ -20,9 +20,9 @@ const SkillCategoryType = new GraphQLObjectType({
     fields: () => ({
         _id: { type: GraphQLID },
         title: { type: GraphQLNonNull(GraphQLString) },
-        // languages: (skillCategory) => {
-        //     return languages.filter(skillCategory => skillCategory._id === languages._id)
-        // }
+        languages: {
+            type: new GraphQLList(LanguageType)
+        }
     })
 });
 
