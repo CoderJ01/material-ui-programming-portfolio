@@ -9,7 +9,7 @@ Using the React component library known as Material UI, this site showcases my w
 * Material UI
 
 ## Screenshot of Website
-![Alt text](/images/image-screenshot.JPG?raw=true "MUI Programming Portfolio")
+![Alt text](./assets/images/image-screenshot.JPG?raw=true "MUI Programming Portfolio")
 
 ## Website Link
 https://material-ui-programming-portfolio.netlify.app/
