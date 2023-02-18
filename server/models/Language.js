@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const LanguageSchema = new mongoose.Schema({
     skillCategory: {
-        type: Schema.Type.ObjectId,
+        type: mongoose.Types.ObjectId,
         ref: 'SkillCategory'
     },
     name: {
