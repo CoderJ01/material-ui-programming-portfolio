@@ -6,10 +6,12 @@ const LanguageSchema = new mongoose.Schema({
         ref: 'SkillCategory'
     },
     name: {
-        type: String
+        type: String,
+        required: true
     },
     proficiency: {
-        type: Number
+        type: Number,
+        required: true
     }
 });
 
