@@ -59,3 +59,61 @@ const ContentType = new GraphQLObjectType({
         image: { type: GraphQLNonNull(GraphQLString) }
     })
 });
+
+const RootQuery = new GraphQLObjectType({
+    name: 'RootQueryType',
+    fields: {
+        skillCategories: {
+            type: new GraphQLList(SkillCategoryType),
+            resolve(parent, args) {
+                return SkillCategory.find();
+            }
+        },
+        skillCategory: {
+            type: SkillCategoryType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return SkillCategory.findById(args.id);
+            }
+        },
+        languages: {
+            type: new GraphQLList(LanguageType),
+            resolve(parent, args) {
+                return Language.find();
+            }
+        },
+        language: {
+            type: LanguageType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return Language.findById(args.id);
+            }
+        },
+        sections: {
+            type: new GraphQLList(SectionType),
+            resolve(parent, args) {
+                return Section.find();
+            }
+        },
+        section: {
+            type: SectionType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return Section.findById(args.id);
+            }
+        },
+        contents: {
+            type: new GraphQLList(ContentType),
+            resolve(parent, args) {
+                return Content.find();
+            }
+        },
+        content: {
+            type: ContentType,
+            args: { id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return Content.findById(args.id);
+            }
+        }
+    }
+});
