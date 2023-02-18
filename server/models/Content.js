@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
 const ContentSchema = new mongoose.Schema({
-    section: {
-        type: mongoose.Types.ObjectId,
-        ref: 'Section'
+    _id: {
+        type: mongoose.Types.ObjectId
     },
     heading1: {
         type: String,
@@ -19,7 +18,11 @@ const ContentSchema = new mongoose.Schema({
     image: {
         type: String,
         required: true
-    }
+    },
+    section: {
+        type: mongoose.Types.ObjectId,
+        ref: 'Section'
+    },
 });
 
 module.exports = mongoose.model('Content', ContentSchema);
