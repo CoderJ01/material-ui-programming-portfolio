@@ -8,4 +8,4 @@ const SkillCategorySchema = new mongoose.Schema({
     langauges: [LanguageSchema]
 });
 
-module.exports = mongoose.model('Skill', SkillCategorySchema);
+module.exports = mongoose.model('SkillCategory', SkillCategorySchema);
