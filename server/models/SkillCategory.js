@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-import LanguageSchema from './Language';
 
 const SkillCategorySchema = new mongoose.Schema({
     _id: {
