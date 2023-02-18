@@ -12,7 +12,7 @@ const LanguageSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-    skillCategory: {
+    skillCategoryId: {
         type: mongoose.Types.ObjectId,
         ref: 'SkillCategory'
     },
