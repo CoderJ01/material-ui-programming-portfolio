@@ -3,7 +3,7 @@ import LanguageSchema from './Language';
 
 const SkillCategorySchema = new mongoose.Schema({
     _id: {
-        type: ObjectId
+        type: Schema.Types.ObjectId
     },
     title: {
         type: String
