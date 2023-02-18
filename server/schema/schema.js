@@ -35,3 +35,13 @@ const LanguageType = new GraphQLObjectType({
         proficiency: { type: GraphQLNonNull(GraphQLInt) },
     })
 });
+
+// Section Type
+const SectionType = new GraphQLObjectType({
+    name: 'Section',
+    _id: { type: GraphQLID },
+    title: { type: GraphQLNonNull(GraphQLString) },
+    content: {
+        type: new GraphQLList(ContentType)
+    }
+});
