@@ -45,3 +45,14 @@ const SectionType = new GraphQLObjectType({
         type: new GraphQLList(ContentType)
     }
 });
+
+// Content Type
+const ContentType = new GraphQLObjectType({
+    name: 'Content',
+    fields: () => ({
+        heading1: { type: GraphQLNonNull(GraphQLString) },
+        heading2: { type: GraphQLString },
+        link: { type: GraphQLNonNull(GraphQLString) },
+        image: { type: GraphQLNonNull(GraphQLString) }
+    })
+});
