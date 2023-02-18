@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 
 const LanguageSchema = new mongoose.Schema({
-    skillCategory: {
-        type: mongoose.Types.ObjectId,
-        ref: 'SkillCategory'
+    _id: {
+        type: mongoose.Types.ObjectId
     },
     name: {
         type: String,
@@ -12,7 +11,11 @@ const LanguageSchema = new mongoose.Schema({
     proficiency: {
         type: Number,
         required: true
-    }
+    },
+    skillCategory: {
+        type: mongoose.Types.ObjectId,
+        ref: 'SkillCategory'
+    },
 });
 
 module.exports = mongoose.model('Language', LanguageSchema);
