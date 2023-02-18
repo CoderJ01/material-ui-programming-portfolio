@@ -6,7 +6,8 @@ const SkillCategorySchema = new mongoose.Schema({
         type: Schema.Types.ObjectId
     },
     title: {
-        type: String
+        type: String,
+        required: true
     },
     langauges: [LanguageSchema]
 });
