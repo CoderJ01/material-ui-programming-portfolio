@@ -8,7 +8,7 @@ const SectionSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    content: [{
+    contents: [{
         type: mongoose.Types.ObjectId,
         ref: 'Content'
     }]
