@@ -9,7 +9,10 @@ const SkillCategorySchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    langauges: [LanguageSchema]
+    langauges: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Language'
+    }]
 });
 
 module.exports = mongoose.model('SkillCategory', SkillCategorySchema);
