@@ -196,7 +196,7 @@ const mutation = new GraphQLObjectType({
                 _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                SkillCategory.find({ langaugeId: args._id }).then(
+                SkillCategory.find({ _id: args._id }).then(
                     skillCategories => {
                         skillCategories.forEach(skillCategory => {
                             skillCategory.remove();
@@ -221,7 +221,7 @@ const mutation = new GraphQLObjectType({
                 _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                Section.find({ contentId: args._id }).then(
+                Section.find({ _id: args._id }).then(
                     sections => {
                         sections.forEach(section => {
                             section.remove();
