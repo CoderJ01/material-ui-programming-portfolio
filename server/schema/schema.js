@@ -57,7 +57,8 @@ const ContentType = new GraphQLObjectType({
         heading1: { type: new GraphQLNonNull(GraphQLString) },
         heading2: { type: GraphQLString },
         link: { type: new GraphQLNonNull(GraphQLString) },
-        image: { type: new GraphQLNonNull(GraphQLString) }
+        image: { type: new GraphQLNonNull(GraphQLString) },
+        sectionId: { type: GraphQLID },
     })
 });
 
@@ -170,7 +171,7 @@ const mutation = new GraphQLObjectType({
                 heading2: { type: GraphQLString },
                 link: { type: new GraphQLNonNull(GraphQLString) },
                 image: { type: new GraphQLNonNull(GraphQLString) },
-                contentId: { type: new GraphQLNonNull(GraphQLID) }
+                sectionId: { type: new GraphQLNonNull(GraphQLID) }
             },
             resolve(parent, args) {
                 const content = new Content({
@@ -178,7 +179,7 @@ const mutation = new GraphQLObjectType({
                     heading2: args.heading2,
                     link: args.link,
                     image: args.image,
-                    contentId: args.contentId
+                    sectionId: args.sectionId
                 });
                 return content.save();
             }
