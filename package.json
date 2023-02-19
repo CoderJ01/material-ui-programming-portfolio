@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CoderJ01/material-ui-programming-portfolio/issues"
   },
-  "homepage": "https://github.com/CoderJ01/material-ui-programming-portfolio#readme"
+  "homepage": "https://github.com/CoderJ01/material-ui-programming-portfolio#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
 }
