@@ -1,0 +1,20 @@
+{
+  "name": "material-ui-programming-portfolio",
+  "version": "1.0.0",
+  "description": "Using the React component library known as Material UI, this site showcases my work as a programmer. The first page contains a mini-biography; the second, my portfolio; third, lists of skills I have; and fourth, a functional contact form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderJ01/material-ui-programming-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoderJ01/material-ui-programming-portfolio/issues"
+  },
+  "homepage": "https://github.com/CoderJ01/material-ui-programming-portfolio#readme"
+}
