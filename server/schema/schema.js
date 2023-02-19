@@ -30,6 +30,7 @@ const SkillCategoryType = new GraphQLObjectType({
 const LanguageType = new GraphQLObjectType({
     name: 'Language',
     fields: () => ({
+        _id: { type: GraphQLID },
         name: { type: new GraphQLNonNull(GraphQLString) },
         proficiency: { type: new GraphQLNonNull(GraphQLInt) },
         skillCategoryId: { type: GraphQLID },
