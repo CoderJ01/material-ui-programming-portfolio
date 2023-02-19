@@ -14,6 +14,8 @@ const {
     GraphQLInt
 } = require('graphql');
 
+const languages = [{}];
+
 // SkillCategory Type
 const SkillCategoryType = new GraphQLObjectType({
     name: 'SkillCategory',
@@ -21,7 +23,10 @@ const SkillCategoryType = new GraphQLObjectType({
         _id: { type: GraphQLID },
         title: { type: new GraphQLNonNull(GraphQLString) },
         languages: {
-            type: new GraphQLList(LanguageType)
+            type: new GraphQLList(LanguageType),
+            resolve(parent, args) {
+                return _.filter(languages, { skillCategoryId: parent.id });
+            }
         }
     })
 });
