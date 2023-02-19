@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const ContentSchema = new mongoose.Schema({
     heading1: {
         type: String,
-        required: true
     },
     heading2: {
-        type: String
+        type: String,
+        required: true
     },
     link: {
         type: String,
