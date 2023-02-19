@@ -135,6 +135,7 @@ const mutation = new GraphQLObjectType({
             }
         },
         addLanguage: {
+            type: LanguageType,
             args: {
                 name: { type: new GraphQLNonNull(GraphQLString) },
                 proficiency: { type: new GraphQLNonNull(GraphQLInt) },
@@ -150,6 +151,7 @@ const mutation = new GraphQLObjectType({
             }
         },
         addSection: {
+            type: SectionType,
             args: {
                 title: { type: new GraphQLNonNull(GraphQLString) },
             },
@@ -161,6 +163,7 @@ const mutation = new GraphQLObjectType({
             }
         },
         addContent: {
+            type: ContentType,
             args: {
                 heading1: { type: new GraphQLNonNull(GraphQLString) },
                 heading2: { type: GraphQLString },
