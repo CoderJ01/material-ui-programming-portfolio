@@ -15,7 +15,7 @@ connectDB();
 
 app.use('/graphql', graphqlHTTP({
     schema,
-    graphql: process.env.NODE_ENV === 'development'
+    graphiql: process.env.NODE_ENV === 'development'
 }));
 
 app.listen(PORT, console.log(`Server is running on port ${PORT}`));
