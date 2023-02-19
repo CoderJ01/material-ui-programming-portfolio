@@ -55,7 +55,10 @@ const SectionType = new GraphQLObjectType({
         _id: { type: GraphQLID },
         title: { type: new GraphQLNonNull(GraphQLString) },
         content: {
-            type: new GraphQLList(ContentType)
+            type: new GraphQLList(ContentType),
+            resolve(parent, args) {
+                return Content.find({ sectionId: parent.id });
+            }
         }
     }),
 });
@@ -69,7 +72,12 @@ const ContentType = new GraphQLObjectType({
         heading2: { type: GraphQLString },
         link: { type: new GraphQLNonNull(GraphQLString) },
         image: { type: new GraphQLNonNull(GraphQLString) },
-        sectionId: { type: GraphQLID },
+        sectionId: { 
+            type: SectionType,
+            resolve(parent, args) {
+                return Section.findById(parent.sectionId);
+            }
+        },
     })
 });
 
