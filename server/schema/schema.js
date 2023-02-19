@@ -26,7 +26,7 @@ const SkillCategoryType = new GraphQLObjectType({
         languages: {
             type: new GraphQLList(LanguageType),
             resolve(parent, args) {
-                return _.filter(languages, { skillCategoryId: parent.id });
+                return Book.find({ skillCategoryId: parent.id });
             }
         }
     })
