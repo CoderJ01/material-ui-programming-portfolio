@@ -68,8 +68,8 @@ const ContentType = new GraphQLObjectType({
     name: 'Content',
     fields: () => ({
         _id: { type: GraphQLID },
-        heading1: { type: new GraphQLNonNull(GraphQLString) },
-        heading2: { type: GraphQLString },
+        heading1: { type: GraphQLString },
+        heading2: { type: new GraphQLNonNull(GraphQLString)  },
         link: { type: new GraphQLNonNull(GraphQLString) },
         image: { type: new GraphQLNonNull(GraphQLString) },
         sectionId: { 
@@ -186,8 +186,8 @@ const mutation = new GraphQLObjectType({
         addContent: {
             type: ContentType,
             args: {
-                heading1: { type: new GraphQLNonNull(GraphQLString) },
-                heading2: { type: GraphQLString },
+                heading1: { type: GraphQLString },
+                heading2: { type: new GraphQLNonNull(GraphQLString) },
                 link: { type: new GraphQLNonNull(GraphQLString) },
                 image: { type: new GraphQLNonNull(GraphQLString) },
                 sectionId: { type: new GraphQLNonNull(GraphQLID) }
