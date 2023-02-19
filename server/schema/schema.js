@@ -39,7 +39,12 @@ const LanguageType = new GraphQLObjectType({
         _id: { type: GraphQLID },
         name: { type: new GraphQLNonNull(GraphQLString) },
         proficiency: { type: new GraphQLNonNull(GraphQLInt) },
-        skillCategoryId: { type: GraphQLID },
+        skillCategoryId: { 
+            type: SkillCategoryType,
+            resolve(parent, args) {
+                return SkillCategory.findById(parent.skillCategoryId);
+            }
+        },
     })
 });
 
