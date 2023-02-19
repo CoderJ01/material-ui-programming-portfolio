@@ -19,7 +19,7 @@ const SkillCategoryType = new GraphQLObjectType({
     name: 'SkillCategory',
     fields: () => ({
         _id: { type: GraphQLID },
-        title: { type: GraphQLNonNull(GraphQLString) },
+        title: { type: new GraphQLNonNull(GraphQLString) },
         languages: {
             type: new GraphQLList(LanguageType)
         }
@@ -30,8 +30,8 @@ const SkillCategoryType = new GraphQLObjectType({
 const LanguageType = new GraphQLObjectType({
     name: 'Language',
     fields: () => ({
-        name: { type: GraphQLNonNull(GraphQLString) },
-        proficiency: { type: GraphQLNonNull(GraphQLInt) },
+        name: { type: new GraphQLNonNull(GraphQLString) },
+        proficiency: { type: new GraphQLNonNull(GraphQLInt) },
         skillCategory: { type: GraphQLID },
     })
 });
@@ -41,7 +41,7 @@ const SectionType = new GraphQLObjectType({
     name: 'Section',
     fields: () => ({
         _id: { type: GraphQLID },
-        title: { type: GraphQLNonNull(GraphQLString) },
+        title: { type: new GraphQLNonNull(GraphQLString) },
         content: {
             type: new GraphQLList(ContentType)
         }
@@ -53,10 +53,10 @@ const ContentType = new GraphQLObjectType({
     name: 'Content',
     fields: () => ({
         _id: { type: GraphQLID },
-        heading1: { type: GraphQLNonNull(GraphQLString) },
+        heading1: { type: new GraphQLNonNull(GraphQLString) },
         heading2: { type: GraphQLString },
-        link: { type: GraphQLNonNull(GraphQLString) },
-        image: { type: GraphQLNonNull(GraphQLString) }
+        link: { type: new GraphQLNonNull(GraphQLString) },
+        image: { type: new GraphQLNonNull(GraphQLString) }
     })
 });
 
