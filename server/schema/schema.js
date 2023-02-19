@@ -233,3 +233,8 @@ const mutation = new GraphQLObjectType({
         },
     }
 });
+
+module.exports = new GraphQLSchema({
+    query: RootQuery,
+    mutation
+});
