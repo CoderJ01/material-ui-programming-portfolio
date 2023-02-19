@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const ContentSchema = new mongoose.Schema({
-    contentId: {
+    _id: {
         type: mongoose.Types.ObjectId
     },
     heading1: {
