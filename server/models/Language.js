@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
 const LanguageSchema = new mongoose.Schema({
-    _id: {
-        type: mongoose.Types.ObjectId
-    },
     name: {
         type: String,
         required: true

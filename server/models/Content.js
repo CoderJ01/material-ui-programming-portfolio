@@ -1,9 +1,6 @@
 const mongoose = require('mongoose');
 
 const ContentSchema = new mongoose.Schema({
-    _id: {
-        type: mongoose.Types.ObjectId
-    },
     heading1: {
         type: String,
         required: true
