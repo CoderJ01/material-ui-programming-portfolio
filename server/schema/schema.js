@@ -71,9 +71,9 @@ const RootQuery = new GraphQLObjectType({
         },
         skillCategory: {
             type: SkillCategoryType,
-            args: { id: { type: GraphQLID } },
+            args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
-                return SkillCategory.findById(args.id);
+                return SkillCategory.findById(args._id);
             }
         },
         languages: {
@@ -84,9 +84,9 @@ const RootQuery = new GraphQLObjectType({
         },
         language: {
             type: LanguageType,
-            args: { id: { type: GraphQLID } },
+            args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
-                return Language.findById(args.id);
+                return Language.findById(args._id);
             }
         },
         sections: {
@@ -97,9 +97,9 @@ const RootQuery = new GraphQLObjectType({
         },
         section: {
             type: SectionType,
-            args: { id: { type: GraphQLID } },
+            args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
-                return Section.findById(args.id);
+                return Section.findById(args._id);
             }
         },
         contents: {
@@ -110,9 +110,9 @@ const RootQuery = new GraphQLObjectType({
         },
         content: {
             type: ContentType,
-            args: { id: { type: GraphQLID } },
+            args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
-                return Content.findById(args.id);
+                return Content.findById(args._id);
             }
         }
     }
@@ -184,51 +184,51 @@ const mutation = new GraphQLObjectType({
         deleteSkillCategory: {
             type: SkillCategoryType,
             args: {
-                id: { type: new GraphQLNonNull(GraphQLID) },
+                _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                return SkillCategory.findByIdAndRemove(args.id);
+                return SkillCategory.findByIdAndRemove(args._id);
             }
         },
         deleteLanguage: {
             type: LanguageType,
             args: {
-                id: { type: new GraphQLNonNull(GraphQLID) },
+                _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                SkillCategory.find({ langaugeId: args.id }).then(
+                SkillCategory.find({ langaugeId: args._id }).then(
                     skillCategories => {
                         skillCategories.forEach(skillCategory => {
                             skillCategory.remove();
                         })
                     }
                 )
-                return Language.findByIdAndRemove(args.id);
+                return Language.findByIdAndRemove(args._id);
             }
         },
         deleteSection: {
             type: SectionType,
             args: {
-                id: { type: new GraphQLNonNull(GraphQLID) },
+                _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                return Section.findByIdAndRemove(args.id);
+                return Section.findByIdAndRemove(args._id);
             }
         },
         deleteContent: {
             type: ContentType,
             args: {
-                id: { type: new GraphQLNonNull(GraphQLID) },
+                _id: { type: new GraphQLNonNull(GraphQLID) },
             },
             resolve(parent, args) {
-                Section.find({ contentId: args.id }).then(
+                Section.find({ contentId: args._id }).then(
                     sections => {
                         sections.forEach(section => {
                             section.remove();
                         })
                     }
                 )
-                return Content.findByIdAndRemove(args.id);
+                return Content.findByIdAndRemove(args._id);
             }
         },
     }
