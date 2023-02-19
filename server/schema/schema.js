@@ -178,6 +178,58 @@ const mutation = new GraphQLObjectType({
                 });
                 return content.save();
             }
-        }
+        },
+
+        // DELETE //
+        deleteSkillCategory: {
+            type: SkillCategoryType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLID) },
+            },
+            resolve(parent, args) {
+                return SkillCategory.findByIdAndRemove(args.id);
+            }
+        },
+        deleteLanguage: {
+            type: LanguageType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLID) },
+            },
+            resolve(parent, args) {
+                SkillCategory.find({ langaugeId: args.id }).then(
+                    skillCategories => {
+                        skillCategories.forEach(skillCategory => {
+                            skillCategory.remove();
+                        })
+                    }
+                )
+                return Language.findByIdAndRemove(args.id);
+            }
+        },
+        deleteSection: {
+            type: SectionType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLID) },
+            },
+            resolve(parent, args) {
+                return Section.findByIdAndRemove(args.id);
+            }
+        },
+        deleteContent: {
+            type: ContentType,
+            args: {
+                id: { type: new GraphQLNonNull(GraphQLID) },
+            },
+            resolve(parent, args) {
+                Section.find({ contentId: args.id }).then(
+                    sections => {
+                        sections.forEach(section => {
+                            section.remove();
+                        })
+                    }
+                )
+                return Content.findByIdAndRemove(args.id);
+            }
+        },
     }
 });
