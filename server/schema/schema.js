@@ -32,7 +32,7 @@ const LanguageType = new GraphQLObjectType({
     fields: () => ({
         name: { type: new GraphQLNonNull(GraphQLString) },
         proficiency: { type: new GraphQLNonNull(GraphQLInt) },
-        skillCategory: { type: GraphQLID },
+        skillCategoryId: { type: GraphQLID },
     })
 });
 
@@ -145,7 +145,7 @@ const mutation = new GraphQLObjectType({
                 const language = new Language({
                     name: args.name,
                     proficiency: args.proficiency,
-                    skillCategoryId: args.skillCategory
+                    skillCategoryId: args.skillCategoryId
                 });
                 return language.save();
             }
