@@ -23,7 +23,7 @@ const SkillCategoryType = new GraphQLObjectType({
     fields: () => ({
         _id: { type: GraphQLID },
         title: { type: new GraphQLNonNull(GraphQLString) },
-        languages: {
+        language: {
             type: new GraphQLList(LanguageType),
             resolve(parent, args) {
                 return Language.find({ skillCategoryId: parent.id });
