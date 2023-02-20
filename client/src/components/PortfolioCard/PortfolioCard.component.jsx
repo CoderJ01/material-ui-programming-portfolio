@@ -29,14 +29,14 @@ const PortfolioCard = ({ dataObj = [] }) => {
                     </Container>
                     <Grid container spacing={5}>
                     {
-                        Array.apply(0, Array(dataObj.langauge.length)).map(function(x, i) {
-                            checkmarkColor = SetCheckmarkColor(dataObj.langauge[i].proficiency);
+                        Array.apply(0, Array(dataObj.language.length)).map(function(x, i) {
+                            checkmarkColor = SetCheckmarkColor(dataObj.language[i].proficiency);
                             return (
                                 <Grid item xs={6}>
                                     <Container>
                                         <Container sx={{ display: 'flex'}}>
                                             <CheckCircleIcon sx={{ fill: checkmarkColor }}></CheckCircleIcon>
-                                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.langauge[i].name}</Typography>
+                                            <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva'}}>{dataObj.language[i].name}</Typography>
                                         </Container>
                                     </Container>
                                 </Grid>
