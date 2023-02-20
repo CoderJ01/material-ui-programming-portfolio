@@ -219,6 +219,18 @@ const mutation = new GraphQLObjectType({
                 return content.save();
             }
         },
+        addDescription: {
+            type: DescriptionType,
+            args: {
+               text: { type: new GraphQLNonNull(GraphQLString) }
+            },
+            resolve(parent, args) {
+                const description = new Description({
+                    text: args.text
+                });
+                return description.save();
+            }
+        },
 
         // DELETE //
         deleteSkillCategory: {
