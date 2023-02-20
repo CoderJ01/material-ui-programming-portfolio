@@ -167,6 +167,19 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 return Description.findById(args._id);
             }
+        },
+        paragraphs: {
+            type: new GraphQLList(IntroParagraphType),
+            resolve(parent, args) {
+                return IntroParagraph.find();
+            }
+        },
+        paragraph: {
+            type: IntroParagraphType,
+            args: { _id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return IntroParagraph.findById(args._id);
+            }
         }
     }
 });
