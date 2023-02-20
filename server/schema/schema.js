@@ -4,7 +4,7 @@ const Language = require('../models/Language');
 const Section = require('../models/Section');
 const Content = require('../models/Content');
 const Description = require('../models/Description');
-const Introduction = require('../models/Introduction');
+const IntroParagraph = require('../models/IntroParagraph');
 
 const { 
     GraphQLObjectType,  
@@ -92,8 +92,8 @@ const DescriptionType = new GraphQLObjectType({
     })
 });
 
-const IntroductionType = new GraphQLObjectType({
-    name: 'Introduction',
+const IntroParagraphType = new GraphQLObjectType({
+    name: 'IntroParagraph',
     fields: () => ({
         _id: { type: GraphQLID },
         paragraph: { type: new GraphQLNonNull(GraphQLString) },
