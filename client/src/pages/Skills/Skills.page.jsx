@@ -45,10 +45,13 @@ const Skills = () => {
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }}>
-                            <PortfolioCard dataObj={data.skillCategories[0]}/>
-                            {/* <PortfolioCard dataObj={backend}/> */}
-                            {/* <PortfolioCard dataObj={database}/> */}
-                            {/* <PortfolioCard dataObj={miscellaneous}/> */}
+                            {
+                                Array.apply(0, Array(data.skillCategories.length)).map(function(x, i) {
+                                    return (
+                                        <PortfolioCard dataObj={data.skillCategories[i]}/>
+                                    );
+                                })
+                            }
                         </Grid>
                     </Box>
                 </Box>
