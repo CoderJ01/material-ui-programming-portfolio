@@ -3,20 +3,13 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import { Typography } from '@mui/material';
-import { 
-    beforeBootcamp, 
-    // bootcamp, 
-    // selfTaught, 
-    // certificates, 
-    // resume 
-} from './Portfolio.data';
 import Section from '../../components/Section/Section.component';
 import { GET_ALL_SECTIONS_WITH_DETAILS } from '../../graphql/queries/Section.query';
 import { useQuery } from '@apollo/client';
 
 const Portfolio = () => {
     
-    const { loading, error, data } = useQuery(GET_ALL_SECTIONS_WITH_DETAILS);
+    const { /*loading, error,*/ data } = useQuery(GET_ALL_SECTIONS_WITH_DETAILS);
     
     return (
         <React.Fragment>
@@ -33,12 +26,11 @@ const Portfolio = () => {
                                         <Section dataObj={data.sections[i]}/>
                                     )
                                 }
+                                else {
+                                    return <span></span>;
+                                }
                               })
                         }
-                        {/* <Section dataObj={bootcamp}/>
-                        <Section dataObj={selfTaught}/>
-                        <Section dataObj={certificates}/>
-                        <Section dataObj={resume}/> */}
                     </Container>
                 </Box>
             </Container>
