@@ -3,6 +3,7 @@ const SkillCategory = require('../models/SkillCategory');
 const Language = require('../models/Language');
 const Section = require('../models/Section');
 const Content = require('../models/Content');
+const Description = require('../models/Description');
 
 const { 
     GraphQLObjectType,  
@@ -78,6 +79,14 @@ const ContentType = new GraphQLObjectType({
                 return Section.findById(parent.sectionId);
             }
         },
+    })
+});
+
+const DescriptionType = new GraphQLObjectType({
+    name: 'Description',
+    fields: () => ({
+        _id: { type: GraphQLID },
+        text: { type: GraphQLNonNull(GraphQLString) }
     })
 });
 
