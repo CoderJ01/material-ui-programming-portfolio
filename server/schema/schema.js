@@ -86,8 +86,8 @@ const DescriptionType = new GraphQLObjectType({
     name: 'Description',
     fields: () => ({
         _id: { type: GraphQLID },
-        title: { type: GraphQLNonNull(GraphQLString) },
-        text: { type: GraphQLNonNull(GraphQLString) }
+        title: { type: new GraphQLNonNull(GraphQLString) },
+        text: { type: new GraphQLNonNull(GraphQLString) }
     })
 });
 
@@ -148,7 +148,7 @@ const RootQuery = new GraphQLObjectType({
         },
         description: {
             type: DescriptionType,
-            arg: { _id: { type: GraphQLID } },
+            args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
                 return Description.findById(args._id);
             }
