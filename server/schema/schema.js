@@ -146,6 +146,12 @@ const RootQuery = new GraphQLObjectType({
                 return Content.findById(args._id);
             }
         },
+        descriptions: {
+            type: new GraphQLList(DescriptionType),
+            resolve(parent, args) {
+                return Description.find();
+            }
+        },
         description: {
             type: DescriptionType,
             args: { _id: { type: GraphQLID } },
