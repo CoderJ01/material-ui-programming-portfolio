@@ -268,7 +268,7 @@ const mutation = new GraphQLObjectType({
                 text: { type: new GraphQLNonNull(GraphQLString) }
             },
             resolve(parent, args) {
-                const paragraph = new Description({
+                const paragraph = new Paragraph({
                     text: args.text
                 });
                 return paragraph.save();
