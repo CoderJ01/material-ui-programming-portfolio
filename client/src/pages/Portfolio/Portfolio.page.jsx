@@ -9,7 +9,7 @@ import { useQuery } from '@apollo/client';
 
 const Portfolio = () => {
     
-    const { /*loading, error,*/ data } = useQuery(GET_ALL_SECTIONS_WITH_DETAILS);
+    const { loading, error, data } = useQuery(GET_ALL_SECTIONS_WITH_DETAILS);
     
     return (
         <React.Fragment>
