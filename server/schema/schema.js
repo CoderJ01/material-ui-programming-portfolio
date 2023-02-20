@@ -171,14 +171,14 @@ const RootQuery = new GraphQLObjectType({
         paragraphs: {
             type: new GraphQLList(ParagraphType),
             resolve(parent, args) {
-                return IntroParagraph.find();
+                return Paragraph.find();
             }
         },
         paragraph: {
             type: ParagraphType,
             args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
-                return IntroParagraph.findById(args._id);
+                return Paragraph.findById(args._id);
             }
         }
     }
