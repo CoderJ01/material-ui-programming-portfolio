@@ -5,7 +5,6 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Typography } from '@mui/material';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard.component';
-import { description } from './Skills.data';
 import Paper from '@mui/material/Paper';
 import { GET_ALL_SKILL_CATEGORIES_WITH_DETAILS } from '../../graphql/queries/Skill.query';
 import { GET_ALL_DESCRIPTIONS } from '../../graphql/queries/Description.query';
