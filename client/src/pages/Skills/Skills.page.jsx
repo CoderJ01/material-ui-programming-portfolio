@@ -8,11 +8,13 @@ import PortfolioCard from '../../components/PortfolioCard/PortfolioCard.componen
 import { description } from './Skills.data';
 import Paper from '@mui/material/Paper';
 import { GET_ALL_SKILL_CATEGORIES_WITH_DETAILS } from '../../graphql/queries/Skill.query';
+import { GET_ALL_DESCRIPTIONS } from '../../graphql/queries/Description.query';
 import { useQuery } from '@apollo/client';
 
 const Skills = () => {
     
-    const { loading, error, data } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
+    const { loading, error, data: skillData } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
+    const { data: descriptionData } = useQuery(GET_ALL_DESCRIPTIONS);
 
     return (
         <>
@@ -37,17 +39,17 @@ const Skills = () => {
                                     }}
                                     >
                                     <Paper elevation={8} sx={{ textAlign: 'center'}}>
-                                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>Description</Typography>
-                                        <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{description}</Typography>
+                                        <Typography variant="h4" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{descriptionData.descriptions[0].title}</Typography>
+                                        <Typography variant="h6" gutterBottom sx={{ color: 'rgb(0, 4, 55)', fontFamily: 'Monotype Corsiva' }}>{descriptionData.descriptions[0].text}</Typography>
                                     </Paper>
                                 </Box>
                             </Container>
                             <Box sx={{ flexGrow: 1 }}>
                                 <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }}>
                                     {
-                                        Array.apply(0, Array(data.skillCategories.length)).map(function(x, i) {
+                                        Array.apply(0, Array(skillData.skillCategories.length)).map(function(x, i) {
                                             return (
-                                                <PortfolioCard dataObj={data.skillCategories[i]} key={i}/>
+                                                <PortfolioCard dataObj={skillData.skillCategories[i]} key={i}/>
                                             );
                                         })
                                     }
