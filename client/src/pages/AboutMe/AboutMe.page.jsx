@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import image from './images/01_avatar.png'
-import { Typography } from '@mui/material';
-import { paragraphs } from './AboutMe.data';
+import { Typography } from '@mui/material'
 import { GET_ALL_PARAGRAPHS } from '../../graphql/queries/Paragraph.query';
 import { useQuery } from '@apollo/client';
 
