@@ -18,12 +18,12 @@ const Portfolio = () => {
                 <Box sx={{ minHeight: '50vh', textAlign: 'center', marginTop: '6%', backgroundColor: 'rgb(255, 253, 208)' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Portfolio</Typography>
                     <Container sx={{ marginTop: '6%' }}>
-                        <Section dataObj={data.sections[0]} fromTop={0}/>
+                        <Section dataObj={data.sections[0]} fromTop={0} key={0}/>
                         {
                               Array.apply(0, Array(data.sections.length)).map(function(x, i) {
                                 if(i !== 0) {
                                     return (
-                                        <Section dataObj={data.sections[i]}/>
+                                        <Section dataObj={data.sections[i]} key={i}/>
                                     )
                                 }
                                 else {

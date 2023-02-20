@@ -12,7 +12,7 @@ import { useQuery } from '@apollo/client';
 
 const Skills = () => {
     
-    const {/*loading, error,*/ data } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
+    const { loading, error, data } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
 
     return (
         <React.Fragment>
@@ -43,7 +43,7 @@ const Skills = () => {
                             {
                                 Array.apply(0, Array(data.skillCategories.length)).map(function(x, i) {
                                     return (
-                                        <PortfolioCard dataObj={data.skillCategories[i]}/>
+                                        <PortfolioCard dataObj={data.skillCategories[i]} key={i}/>
                                     );
                                 })
                             }
