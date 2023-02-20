@@ -86,6 +86,7 @@ const DescriptionType = new GraphQLObjectType({
     name: 'Description',
     fields: () => ({
         _id: { type: GraphQLID },
+        title: { type: GraphQLNonNull(GraphQLString) },
         text: { type: GraphQLNonNull(GraphQLString) }
     })
 });
@@ -222,10 +223,12 @@ const mutation = new GraphQLObjectType({
         addDescription: {
             type: DescriptionType,
             args: {
+               title: { type: new GraphQLNonNull(GraphQLString) },
                text: { type: new GraphQLNonNull(GraphQLString) }
             },
             resolve(parent, args) {
                 const description = new Description({
+                    title: args.title,
                     text: args.text
                 });
                 return description.save();
