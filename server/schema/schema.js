@@ -4,7 +4,7 @@ const Language = require('../models/Language');
 const Section = require('../models/Section');
 const Content = require('../models/Content');
 const Description = require('../models/Description');
-const IntroParagraph = require('../models/IntroParagraph');
+const Paragraph = require('../models/Paragraph');
 
 const { 
     GraphQLObjectType,  
@@ -92,8 +92,8 @@ const DescriptionType = new GraphQLObjectType({
     })
 });
 
-const IntroParagraphType = new GraphQLObjectType({
-    name: 'IntroParagraph',
+const ParagraphType = new GraphQLObjectType({
+    name: 'Paragraph',
     fields: () => ({
         _id: { type: GraphQLID },
         text: { type: new GraphQLNonNull(GraphQLString) },
@@ -169,13 +169,13 @@ const RootQuery = new GraphQLObjectType({
             }
         },
         paragraphs: {
-            type: new GraphQLList(IntroParagraphType),
+            type: new GraphQLList(ParagraphType),
             resolve(parent, args) {
                 return IntroParagraph.find();
             }
         },
         paragraph: {
-            type: IntroParagraphType,
+            type: ParagraphType,
             args: { _id: { type: GraphQLID } },
             resolve(parent, args) {
                 return IntroParagraph.findById(args._id);
@@ -263,7 +263,7 @@ const mutation = new GraphQLObjectType({
             }
         },
         addParagraph: {
-            type: IntroParagraphType,
+            type: ParagraphType,
             args: {
                 text: { type: new GraphQLNonNull(GraphQLString) }
             },
