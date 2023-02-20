@@ -96,7 +96,7 @@ const IntroParagraphType = new GraphQLObjectType({
     name: 'IntroParagraph',
     fields: () => ({
         _id: { type: GraphQLID },
-        paragraph: { type: new GraphQLNonNull(GraphQLString) },
+        text: { type: new GraphQLNonNull(GraphQLString) },
     })
 })
 
@@ -260,6 +260,18 @@ const mutation = new GraphQLObjectType({
                     text: args.text
                 });
                 return description.save();
+            }
+        },
+        addParagraph: {
+            type: IntroParagraphType,
+            args: {
+                text: { type: new GraphQLNonNull(GraphQLString) }
+            },
+            resolve(parent, args) {
+                const paragraph = new Description({
+                    text: args.text
+                });
+                return paragraph.save();
             }
         },
 
