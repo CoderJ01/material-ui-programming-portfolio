@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const IntroductionSchema = new mongoose.Schema({
-    paragraph: {
+const IntroParagraphSchema = new mongoose.Schema({
+    text: {
         type: String,
         required: true
     }
 });
 
-module.exports = mongoose.model('Introduction', IntroductionSchema);
+module.exports = mongoose.model('IntroParagraph', IntroParagraphSchema);
