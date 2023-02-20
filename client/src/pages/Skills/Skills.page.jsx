@@ -7,14 +7,18 @@ import { Typography } from '@mui/material';
 import PortfolioCard from '../../components/PortfolioCard/PortfolioCard.component';
 import { 
     frontend, 
-    backend, 
-    database, 
-    miscellaneous,
+    // backend, 
+    // database, 
+    // miscellaneous,
     description } 
 from './Skills.data';
 import Paper from '@mui/material/Paper';
+import { GET_ALL_SKILL_CATEGORIES_WITH_DETAILS } from '../../graphql/queries/Skill.query';
+import { useQuery } from '@apollo/client';
 
 const Skills = () => {
+    const {loading, error, data } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
+    console.log(data.skillCategories);
     return (
         <React.Fragment>
             <CssBaseline />
@@ -41,10 +45,10 @@ const Skills = () => {
                     </Container>
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={4} sx={{ marginTop: '10px', justifyContent: 'center' }}>
-                            <PortfolioCard dataObj={frontend}/>
-                            <PortfolioCard dataObj={backend}/>
-                            <PortfolioCard dataObj={database}/>
-                            <PortfolioCard dataObj={miscellaneous}/>
+                            <PortfolioCard dataObj={data.skillCategories[0]}/>
+                            {/* <PortfolioCard dataObj={backend}/> */}
+                            {/* <PortfolioCard dataObj={database}/> */}
+                            {/* <PortfolioCard dataObj={miscellaneous}/> */}
                         </Grid>
                     </Box>
                 </Box>
