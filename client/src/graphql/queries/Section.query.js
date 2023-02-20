@@ -1,6 +1,6 @@
 import { gql } from '@apollo/client';
 
-export const GET_ALL_SECTIONS = gql`
+export const GET_ALL_SECTIONS_WITH_DETAIL = gql`
     query getSections {
         sections {
             title
