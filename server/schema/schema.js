@@ -144,6 +144,13 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 return Content.findById(args._id);
             }
+        },
+        description: {
+            type: DescriptionType,
+            arg: { _id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return Description.findById(args._id);
+            }
         }
     }
 });
