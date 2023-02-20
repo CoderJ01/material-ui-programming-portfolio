@@ -24,9 +24,9 @@ const AboutMe = () => {
                 <Container maxWidth="sm" sx={{marginTop: '5%', border: '2px solid rgb(0, 4, 55)', background: 'white', borderRadius: '10px' }}>
                     <Box sx={{ minHeight: '100vh' }}>
                         {
-                            paragraphs.map(paragraph => {
+                            paragraphs.map((paragraph, i) => {
                                 return (
-                                    <Typography variant="body1" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>{paragraph}</Typography>
+                                    <Typography variant="body1" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }} key={i}>{paragraph}</Typography>
                                 );
                             })
                         }
