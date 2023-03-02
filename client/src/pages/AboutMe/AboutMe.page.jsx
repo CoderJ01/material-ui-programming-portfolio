@@ -6,11 +6,13 @@ import Avatar from '@mui/material/Avatar';
 import image from './images/01_avatar.png'
 import { Typography } from '@mui/material'
 import { GET_ALL_PARAGRAPHS } from '../../graphql/queries/Paragraph.query';
+import { GET_ALL_AVATARS } from '../../graphql/queries/Avatar.query';
 import { useQuery } from '@apollo/client';
 
 const AboutMe = () => {
 
     const { loading, error, data } = useQuery(GET_ALL_PARAGRAPHS);
+    const { data: avatarData } = useQuery(GET_ALL_AVATARS);
 
     return (
         <>
@@ -25,7 +27,7 @@ const AboutMe = () => {
                         <div style={{ display: 'flex', justifyContent:'center'}}>
                             <Avatar
                                 alt="Remy Sharp"
-                                src={image}
+                                src={avatarData.avatars[0].picture}
                                 sx={{ width: 150, height: 150, border: '5px solid rgb(0, 4, 55)' }}
                             />
                         </div>
