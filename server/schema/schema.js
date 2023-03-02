@@ -296,6 +296,18 @@ const mutation = new GraphQLObjectType({
                 return paragraph.save();
             }
         },
+        addAvatar: {
+            type: AvatarType,
+            args: {
+                picture: { type: new GraphQLNonNull(GraphQLString) }
+            },
+            resolve(parent, args) {
+                const avatar = new Avatar({
+                    picture: args.picture
+                });
+                return avatar.save();
+            }
+        },
 
         // DELETE //
         deleteSkillCategory: {
