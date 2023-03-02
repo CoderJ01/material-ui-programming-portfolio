@@ -5,6 +5,7 @@ const Section = require('../models/Section');
 const Content = require('../models/Content');
 const Description = require('../models/Description');
 const Paragraph = require('../models/Paragraph');
+const Avatar = require('../models/Avatar');
 
 const { 
     GraphQLObjectType,  
@@ -98,7 +99,15 @@ const ParagraphType = new GraphQLObjectType({
         _id: { type: GraphQLID },
         text: { type: new GraphQLNonNull(GraphQLString) },
     })
-})
+});
+
+const AvatarType = new GraphQLObjectType({
+    name: 'Avatar',
+    fields: () => ({
+        _id: { type: GraphQLID },
+        picture: { type: new GraphQLNonNull(GraphQLString) }
+    })
+});
 
 const RootQuery = new GraphQLObjectType({
     name: 'RootQueryType',
