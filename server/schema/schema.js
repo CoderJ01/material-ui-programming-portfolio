@@ -189,7 +189,20 @@ const RootQuery = new GraphQLObjectType({
             resolve(parent, args) {
                 return Paragraph.findById(args._id);
             }
-        }
+        },
+        avatars: {
+            type: new GraphQLList(AvatarType),
+            resolve(parent, args) {
+                return Avatar.find();
+            }
+        },
+        avatar: {
+            type: AvatarType,
+            args: { _id: { type: GraphQLID } },
+            resolve(parent, args) {
+                return Avatar.findById(args._id);
+            }
+        },
     }
 });
 
