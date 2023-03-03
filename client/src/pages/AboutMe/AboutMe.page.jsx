@@ -11,12 +11,12 @@ import { useQuery } from '@apollo/client';
 const AboutMe = () => {
 
     const { loading, error, data } = useQuery(GET_ALL_PARAGRAPHS);
-    const { data: avatarData } = useQuery(GET_ALL_AVATARS);
+    const { loading: avatarLoading, error: avatarError, data: avatarData } = useQuery(GET_ALL_AVATARS);
 
     return (
         <>
         {
-            !loading && !error && 
+            !loading && !error && !avatarLoading && !avatarError &&
             (
                 <React.Fragment>
                     <CssBaseline />
