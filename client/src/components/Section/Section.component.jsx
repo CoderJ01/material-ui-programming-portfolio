@@ -20,7 +20,7 @@ const Section = ({ dataObj = [], fromTop = 10 }) => {
                                     heading2={dataObj.content[i].heading2}
                                     link={dataObj.content[i].link}
                                     image={dataObj.content[i].image}
-                                    key={0}
+                                    key={i}
                                 />
                             );
                         })
