@@ -28,6 +28,7 @@ const AboutMe = () => {
                                 alt="Remy Sharp"
                                 src={avatarData.avatars[0].picture}
                                 sx={{ width: 150, height: 150, border: '5px solid rgb(0, 4, 55)' }}
+                                key={0}
                             />
                         </div>
                         <Container maxWidth="sm" sx={{marginTop: '5%', border: '2px solid rgb(0, 4, 55)', background: 'white', borderRadius: '10px' }}>
