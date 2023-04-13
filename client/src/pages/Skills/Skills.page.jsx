@@ -13,10 +13,10 @@ import Loader from '../../components/Loader/Loader.component';
 
 const Skills = () => {
     
-    const { loading, error, data: skillData } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
-    const { data: descriptionData } = useQuery(GET_ALL_DESCRIPTIONS);
+    const { loading: skillLoading, error, data: skillData } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
+    const { loading: descriptionLoading, data: descriptionData } = useQuery(GET_ALL_DESCRIPTIONS);
 
-    if(loading) {
+    if(skillLoading || descriptionLoading) {
         return (
             <Loader/>
         );
@@ -25,7 +25,7 @@ const Skills = () => {
     return (
         <>
         {
-            !loading && !error && 
+            !error && 
             (
                 <React.Fragment>
                     <CssBaseline />

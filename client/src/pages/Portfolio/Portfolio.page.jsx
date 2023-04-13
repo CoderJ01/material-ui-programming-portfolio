@@ -21,7 +21,7 @@ const Portfolio = () => {
     return (
         <>
         {
-            !loading && !error && 
+            !error && 
             (
                 <React.Fragment>
                     <CssBaseline />
