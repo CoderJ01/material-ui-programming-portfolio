@@ -7,11 +7,18 @@ import { Typography } from '@mui/material'
 import { GET_ALL_PARAGRAPHS } from '../../graphql/queries/Paragraph.query';
 import { GET_ALL_AVATARS } from '../../graphql/queries/Avatar.query';
 import { useQuery } from '@apollo/client';
+import Loader from '../../components/Loader/Loader.component';
 
 const AboutMe = () => {
 
     const { loading, error, data } = useQuery(GET_ALL_PARAGRAPHS);
     const { loading: avatarLoading, error: avatarError, data: avatarData } = useQuery(GET_ALL_AVATARS);
+
+    if(loading) {
+        return (
+            <Loader/>
+        );
+    }
 
     return (
         <>
