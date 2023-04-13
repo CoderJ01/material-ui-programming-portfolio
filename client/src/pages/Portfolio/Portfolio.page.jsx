@@ -6,10 +6,17 @@ import { Typography } from '@mui/material';
 import Section from '../../components/Section/Section.component';
 import { GET_ALL_SECTIONS_WITH_DETAILS } from '../../graphql/queries/Section.query';
 import { useQuery } from '@apollo/client';
+import Loader from '../../components/Loader/Loader.component';
 
 const Portfolio = () => {
     
     const { loading, error, data } = useQuery(GET_ALL_SECTIONS_WITH_DETAILS);
+
+    if(loading) {
+        return (
+            <Loader/>
+        );
+    }
     
     return (
         <>

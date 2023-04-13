@@ -14,7 +14,7 @@ const AboutMe = () => {
     const { loading, error, data } = useQuery(GET_ALL_PARAGRAPHS);
     const { loading: avatarLoading, error: avatarError, data: avatarData } = useQuery(GET_ALL_AVATARS);
 
-    if(loading) {
+    if(loading || avatarLoading) {
         return (
             <Loader/>
         );

@@ -9,11 +9,18 @@ import Paper from '@mui/material/Paper';
 import { GET_ALL_SKILL_CATEGORIES_WITH_DETAILS } from '../../graphql/queries/Skill.query';
 import { GET_ALL_DESCRIPTIONS } from '../../graphql/queries/Description.query';
 import { useQuery } from '@apollo/client';
+import Loader from '../../components/Loader/Loader.component';
 
 const Skills = () => {
     
     const { loading, error, data: skillData } = useQuery(GET_ALL_SKILL_CATEGORIES_WITH_DETAILS);
     const { data: descriptionData } = useQuery(GET_ALL_DESCRIPTIONS);
+
+    if(loading) {
+        return (
+            <Loader/>
+        );
+    }
 
     return (
         <>
