@@ -39,8 +39,7 @@ nav ul li a.active {
     }
 }
 
-/* iPad Pro */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1279px) {
     nav {
         margin-top: -31px;
         width: 100%;
