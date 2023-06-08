@@ -10,7 +10,7 @@ const ContactMe = () => {
         <React.Fragment>
             <CssBaseline />
             <Container maxWidth="sm">
-                <Box sx={{ minHeight: '85vh', marginTop: '9%', textAlign: 'center' }}>
+                <Box sx={{ minHeight: '85vh', marginTop: '9%', textAlign: 'center', paddingBottom: '10vh' }}>
                     <Typography variant="h3" gutterBottom sx={{ color: 'rgb(0, 4, 55)' }}>Contact Me</Typography>
                     <Form />
                 </Box>
